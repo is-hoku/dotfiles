@@ -2,7 +2,12 @@
 /.**
 
 !.bashrc
-!setup.sh
+!.bash_profile
+!.vimrc
+!.xprofile
+!.gitconfig
+!install.sh
+!packages.txt
 
 !/README.md
 !.gitignore
