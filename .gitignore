@@ -8,6 +8,7 @@
 !.gitconfig
 !install.sh
 !packages.txt
+!/bin/
 
 !/README.md
 !.gitignore

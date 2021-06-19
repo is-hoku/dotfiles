@@ -10,4 +10,4 @@ PS1='[\u@\h \W]\$ '
 
 eval "$(starship init bash)"
 
-export PATH=$PATH:~/programming/shell-script
+export PATH=$PATH:~/bin

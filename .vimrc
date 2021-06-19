@@ -1,5 +1,5 @@
 set number
-imap <Nul> <Nop>
+imap <Nul> <C-Space>
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 set termguicolors
@@ -8,9 +8,13 @@ set smartindent
 set cindent
 syntax on
 set t_Co=256
+set clipboard=unnamed
+set shiftwidth=4	
+set tabstop=4
 let g:airline_theme = 'miramare'
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
+"map <C-c> "+y
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 Plugin 'VundleVim/Vundle.vim'
 
@@ -30,4 +34,5 @@ Plugin 'Raimondi/delimitMate'
 
 call vundle#end()
 
-colorscheme miramare
+"colorscheme miramare
+colorscheme sakura
