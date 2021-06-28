@@ -11,7 +11,8 @@
 !/bin/
 !.pam_environment
 !.xinitrc
-!/.config/*
+!/.config
+!/.config/**
 
 !/README.md
 !.gitignore
