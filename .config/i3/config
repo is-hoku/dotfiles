@@ -190,3 +190,25 @@ exec --no-startup-id light-locker --lock-on-suspend
 bindsym Print exec --no-startup-id flameshot full -p  ~/Pictures/screenshots
 bindsym Shift+Print exec --no-startup-id flameshot gui -p ~/Pictures/screenshots
 
+# Shutdown, Lock, Reboot...
+set $Locker light-locker-command -l && sleep 1
+
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id $Locker, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+y mode "$mode_system"
+
+# i3-gaps
+gaps inner 10
+#gaps outer 10
