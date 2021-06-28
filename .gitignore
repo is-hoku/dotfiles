@@ -9,6 +9,9 @@
 !install.sh
 !packages.txt
 !/bin/
+!.pam_environment
+!.xinitrc
+!/.config/
 
 !/README.md
 !.gitignore
