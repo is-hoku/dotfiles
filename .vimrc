@@ -13,6 +13,9 @@ set shiftwidth=4
 set tabstop=4
 "let g:airline_theme = 'miramare'
 let g:airline_theme = 'sakura'
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 "map <C-c> "+y
