@@ -218,6 +218,8 @@ gaps inner 30
  gaps outer -2
 smart_borders on
 
+set_from_resource $fg foreground
+set_from_resource $bg background
 # class                 border  backgr. text    indicator child_border
 client.focused          #ff87ff #ff87ff #ffffff #ff87ff   #ff87ff
 client.focused_inactive #ffd7ff #ffd7ff #ffffff #ffd7ff   #ffd7ff
@@ -237,3 +239,4 @@ border_radius 4
 
 # picom
 exec --no-startup-id picom -cbm 0.88
+
