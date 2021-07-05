@@ -187,7 +187,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# exec --no-startup-id compton -cbm 0.75
 exec --no-startup-id fcitx
 exec --no-startup-id ~/.fehbg
 exec --no-startup-id light-locker --lock-on-suspend
@@ -216,7 +215,7 @@ bindsym $mod+y mode "$mode_system"
 
 # i3-gaps
 gaps inner 30
-# gaps outer -2
+ gaps outer -2
 smart_borders on
 
 # class                 border  backgr. text    indicator child_border
@@ -228,10 +227,13 @@ client.placeholder      #000000 #ff87ff #ffffff #000000   #ff87ff
 client.background       #3f3740
 
 # Border Style
-default_border pixel 2
+default_border pixel 0
 hide_edge_borders both
 default_floating_border normal
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 
 #exec_always picom
-#border_radius 2
+border_radius 4
+
+# picom
+exec --no-startup-id picom -cbm 0.88
