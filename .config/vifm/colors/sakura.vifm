@@ -57,19 +57,19 @@ highlight Fifo cterm=bold ctermfg=cyan ctermbg=default
 highlight Executable cterm=bold ctermfg=green ctermbg=default
 highlight Selected cterm=bold ctermfg=magenta ctermbg=default
 highlight CurrLine cterm=bold,reverse ctermfg=default ctermbg=default
-highlight TopLine cterm=none ctermfg=black ctermbg=white
-highlight TopLineSel cterm=bold ctermfg=black ctermbg=default
-highlight StatusLine cterm=bold ctermfg=black ctermbg=white
+highlight TopLine cterm=none ctermfg=default ctermbg=default
+highlight TopLineSel cterm=bold ctermfg=default ctermbg=default
+highlight StatusLine cterm=bold ctermfg=default ctermbg=default
 highlight WildMenu cterm=underline,reverse ctermfg=white ctermbg=black
 highlight CmdLine cterm=none ctermfg=white ctermbg=black
 highlight ErrorMsg cterm=none ctermfg=red ctermbg=black
-highlight Border cterm=none ctermfg=black ctermbg=white
+highlight Border cterm=none ctermfg=default ctermbg=default
 highlight OtherLine ctermfg=default ctermbg=default
-highlight JobLine cterm=bold,reverse ctermfg=black ctermbg=white
+highlight JobLine cterm=bold,reverse ctermfg=white ctermbg=default
 highlight SuggestBox cterm=bold ctermfg=default ctermbg=default
 highlight CmpMismatch cterm=bold ctermfg=white ctermbg=red
 highlight AuxWin ctermfg=default ctermbg=default
-highlight TabLine cterm=none ctermfg=white ctermbg=black
+highlight TabLine cterm=none ctermfg=white ctermbg=default
 highlight TabLineSel cterm=bold,reverse ctermfg=default ctermbg=default
 highlight User1 ctermfg=default ctermbg=default
 highlight User2 ctermfg=default ctermbg=default

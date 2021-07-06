@@ -30,11 +30,12 @@ set syscalls
 " This probably shouldn't be an option.
 
 set trash
+set trashdir=~/.local/share/Trash
 
 " This is how many directories to store in the directory history.
 
 set history=100
-
+set number
 " Automatically resolve symbolic links on l or Enter.
 
 set nofollowlinks
@@ -64,13 +65,14 @@ set norunexec
 
 " List of color schemes to try (picks the first one supported by the terminal)
 
-colorscheme Default-256 Default
+"colorscheme Default-256 Default
+colorscheme sakura
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
 " See man date or man strftime for details.
 
-set timefmt=%m/%d\ %H:%M
+set timefmt=%Y/%m/%d\ %H:%M:%S
 
 " Show list of matches on tab completion in command-line mode
 
