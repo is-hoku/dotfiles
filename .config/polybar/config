@@ -62,7 +62,7 @@ font-2 = Font Awesome:pixelsize=10;1
 font-3 = Material Icons:pixelsize=10;1
 
 ;modules-left = bspwm i3 memory cpu
-modules-left = i3 memory cpu
+modules-left = powermenu i3 memory cpu
 ;modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 modules-right = pulseaudio wlan battery date
@@ -228,7 +228,8 @@ interval = 2
 ;format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
-label = %percentage:2%%
+;label =  %percentage:2%%
+label = CPU: %percentage:2%%
 
 [module/memory]
 type = internal/memory
@@ -236,7 +237,7 @@ interval = 2
 ;format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
-label = %percentage_used%%
+label = RAM:  %percentage_used%%
 
 [module/wlan]
 type = internal/network
@@ -281,11 +282,11 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =  %Y/%m/%d(%a)
-date-alt =  %Y/%m/%d(%a)
+date =  %Y/%m/%d,%a
+date-alt =  %Y/%m/%d,%a
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = "  %H:%M"
+time-alt = "  %H:%M:%S"
 
 ;format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
@@ -300,7 +301,7 @@ format-volume = <ramp-volume> <label-volume> <bar-volume>
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
+label-muted =  muted
 label-muted-foreground = #666
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -414,9 +415,9 @@ expand-right = true
 
 format-spacing = 1
 
-;label-open = 
+label-open = "  "
 label-open-foreground = ${colors.secondary}
-label-close =  cancel
+label-close = "  cancel"
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
