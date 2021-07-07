@@ -1,5 +1,5 @@
-[user]
-	name = is-hoku
-	email = nono6217n@gmail.com
+[include]
+	path = ~/.gitconfig.local
+
 [init]
 	defaultBranch = main
