@@ -3,3 +3,20 @@
 
 [init]
 	defaultBranch = main
+
+[color "status"]
+	added = red
+	changed = green
+	untracked = blue
+
+[color "diff"]
+   meta = cyan
+   frag = magenta
+   old = blue
+   new = red
+
+[color "branch"]
+   current = cyan reverse
+   local = cyan
+   remote = green
+
