@@ -13,6 +13,7 @@
 !.xinitrc
 !/.config
 !/.config/**
+/.config/vifm/vifminfo.json
 
 !/README.md
 !.gitignore

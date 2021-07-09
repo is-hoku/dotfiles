@@ -7,8 +7,11 @@ set autoindent
 set smartindent
 set cindent
 syntax on
+"set hlsearch
+set incsearch
+set wildmenu
 set t_Co=256
-set clipboard=unnamed
+set clipboard=unnamedplus
 set shiftwidth=4
 set tabstop=4
 "let g:airline_theme = 'miramare'
@@ -18,7 +21,6 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
-"map <C-c> "+y
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 Plugin 'VundleVim/Vundle.vim'
 " Write Plugins here!
@@ -34,9 +36,14 @@ Plugin 'mattn/vim-lsp-settings'
 Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-lsp.vim'
 Plugin 'Raimondi/delimitMate'
-Plugin 'nono-n1i/sakura'
+Plugin 'is-hoku/sakura'
 "Plugin 'fuenor/im_control.vim'
 
 call vundle#end()
 "colorscheme miramare
 colorscheme sakura
+
+if has('persistent_undo')
+	set undodir=~/.vim/undo
+	set undofile
+endif
