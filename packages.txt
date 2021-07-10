@@ -661,8 +661,6 @@ rsync 3.2.3-3
 rtkit 0.13-1
 run-parts 4.11.2-1
 runc 1.0.0-1
-rxvt-unicode 9.26-2
-rxvt-unicode-terminfo 9.26-2
 sbc 1.5-2
 sdl2 2.0.14-1
 seabios 1.14.0-1
