@@ -13,4 +13,4 @@ eval "$(starship init bash)"
 eval $(dircolors ~/.dir_colors)
 
 export PATH=$PATH:~/bin
-
+export QT_QPA_PLATFORMTHEME=qt5ct

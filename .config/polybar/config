@@ -470,6 +470,11 @@ menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 
+[module/title]
+type = internal/xwindow
+format = <label>
+label = %title%
+
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -483,3 +488,4 @@ margin-top = 5
 margin-bottom = 5
 
 ; vim:ft=dosini
+
