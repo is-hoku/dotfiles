@@ -1,1 +1,47 @@
+# zoom and scroll step size
+set zoom-step 20
+set scroll-step 80
+
+# Clipboard
 set selection-clipboard clipboard
+
+set incremental-search true
+
+# Key bindings
+map u scroll half-up
+set d scroll half-down
+map D toggle_page_mode
+map K zoom in
+map J zoom out
+
+# Color
+set recolor true
+set recolor-lightcolor      "#3f3740"
+set recolor-darkcolor       "#ffd7ff"
+set highlight-color         "#af87d7"
+set highlight-active-color  "#ff87ff"
+set default-fg              "#ffd7ff"
+set default-bg              "#3f3740"
+set inputbar-bg             "#3f3740"
+set inputbar-fg             "#ffd7ff"
+set notification-fg         "#3f3740"
+set notification-bg         "#ffd7ff"
+set notification-error-fg   "#3f3740"
+set notification-error-bg   "#d75f5f"
+set notification-warning-fg "#3f3740"
+set notification-warning-bg "#d75f5f"
+set statusbar-bg            "#3f3740"
+set statusbar-fg            "#ffd7ff"
+set completion-bg           "#3f3740"
+set completion-fg           "#ffd7ff"
+set completion-highlight-fg "#ffd7ff"
+set completion-highlight-bg "#3f3740"
+set completion-group-bg     "#3f3740"
+set completion-group-fg     "#ffd7ff"
+
+set statusbar-home-tilde true
+set window-title-basename true
+
+set guioptions cshv
+
+# Fonts
