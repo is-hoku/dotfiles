@@ -190,6 +190,7 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id fcitx
 exec --no-startup-id ~/.fehbg
 exec --no-startup-id light-locker --lock-on-suspend
+exec --no-startup-id dunst
 
 # screenshot
 bindsym Print exec --no-startup-id flameshot full -p  ~/Pictures/screenshots

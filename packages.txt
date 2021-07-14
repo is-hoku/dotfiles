@@ -83,6 +83,7 @@ docker-compose 1.29.2-1
 dosfstools 4.2-1
 double-conversion 3.1.5-2
 dtc 1.6.0-3
+dunst 1.6.1-2
 e2fsprogs 1.46.2-1
 edk2-ovmf 202105-1
 efibootmgr 17-2
