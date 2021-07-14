@@ -2,6 +2,7 @@ a52dec 0.7.4-11
 aalib 1.4rc5-14
 accountsservice 0.6.55-3
 acl 2.3.1-1
+acpi 1.7-3
 adobe-source-code-pro-fonts 2.038ro+1.058it+1.018var-1
 adobe-source-han-serif-jp-fonts 1.001-5
 adobe-source-han-serif-otc-fonts 1.001-5
@@ -738,6 +739,7 @@ util-linux-libs 2.37-3
 v4l-utils 1.20.0-1
 vamp-plugin-sdk 2.10.0-1
 vde2 2.3.2-16
+vi 1:070224-5
 vid.stab 1.1-3
 vifm 0.11-1
 vim-runtime 8.2.2891-1
