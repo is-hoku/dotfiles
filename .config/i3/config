@@ -20,18 +20,6 @@ font pango:Source Code Pro Mono 8
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-exec_always --no-startup-id ~/.config/polybar/launch.sh
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_polybar killall -SIGUSR1 polybar
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -187,11 +175,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-exec --no-startup-id fcitx
-exec --no-startup-id ~/.fehbg
-exec --no-startup-id light-locker --lock-on-suspend
-exec --no-startup-id dunst
-
 # screenshot
 bindsym Print exec --no-startup-id flameshot full -p  ~/Pictures/screenshots
 bindsym Shift+Print exec --no-startup-id flameshot gui -p ~/Pictures/screenshots
@@ -216,7 +199,7 @@ bindsym $mod+y mode "$mode_system"
 
 # i3-gaps
 gaps inner 30
- gaps outer -2
+gaps outer -2
 smart_borders on
 
 set_from_resource $fg foreground
@@ -239,5 +222,16 @@ for_window [class="^.*"] border pixel 0
 border_radius 4
 
 # picom
-exec --no-startup-id picom -cbm 0.88
+#exec --no-startup-id picom -cbm 0.88
+
+
+# Autostart applications
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id nm-applet
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id fcitx
+exec --no-startup-id ~/.fehbg
+exec --no-startup-id light-locker --lock-on-suspend
+exec --no-startup-id dunst
+exec_always --no-startup-id picom -b
 
