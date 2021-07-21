@@ -13,3 +13,5 @@ eval "$(starship init bash)"
 eval $(dircolors ~/.dir_colors)
 
 export PATH=$PATH:~/bin
+
+export QSYS_ROOTDIR="/home/hoku/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/20.1/quartus/sopc_builder/bin"

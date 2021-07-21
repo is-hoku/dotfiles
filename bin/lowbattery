@@ -1,11 +1,16 @@
 #!/bin/bash
 
 battery_level=`acpi -b | grep -P -o '[0-9]+(?=%)'`
-if [ $battery_level -le 10 ]
+if [ $battery_level -le 15 ]
 then
     notify-send "Battery low" "Battery level is ${battery_level}%!"
 fi
-
 # $ crontab -e
-# */5 * * * * sh lowbattery
+#PATH=/usr/bin:/bin
+#XAUTHORITY=/home/hoku/.Xauthority
+#DISPLAY=:0.0
+#XDG_RUNTIME_DIR=/run/user/$(id -u)
+#DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+#
+#*/5 * * * * /bin/sh /home/hoku/bin/lowbattery
 
