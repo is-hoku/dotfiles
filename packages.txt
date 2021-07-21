@@ -62,6 +62,7 @@ colord 1.4.5-4
 compiler-rt 12.0.1-2
 containerd 1.5.2-1
 coreutils 8.32-1
+cracklib 2.9.7-2
 cronie 1.5.7-2
 crypto++ 8.5.0-2
 cryptsetup 2.3.6-1
@@ -395,6 +396,7 @@ libgpg-error 1.42-1
 libgphoto2 2.5.27-1
 libgudev 236-1
 libgusb 0.3.7-1
+libhandy 1.2.3-1
 libheif 1.12.0-1
 libibus 1.5.24-1
 libical 3.0.10-1
@@ -456,6 +458,7 @@ libpng 1.6.37-3
 libproxy 0.4.17-2
 libpsl 0.21.1-1
 libpulse 14.2-3
+libpwquality 1.4.4-3
 libraqm 0.7.1-1
 libraw 0.20.2-1
 libraw1394 2.1.2-3
@@ -771,6 +774,7 @@ sassc 3.6.2-2
 sbc 1.5-2
 sdl2 2.0.14-1
 seabios 1.14.0-1
+seahorse 1:40.0-1
 sed 4.8-1
 shaderc 2021.1-1
 shadow 4.8.1-4
