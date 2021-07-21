@@ -9,6 +9,7 @@
 - Shell: bash   
 - Editor: Vim   
 - Bar: polybar   
+- Launcher: rofi   
 - File Manager: vifm, pcmanfm   
 - PDF Viewer: zathura   
 - Image Viewer: sxiv   
