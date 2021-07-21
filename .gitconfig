@@ -20,3 +20,5 @@
    local = cyan
    remote = green
 
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
