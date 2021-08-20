@@ -38,6 +38,7 @@ Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-lsp.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'is-hoku/sakura'
+Plugin 'mattn/vim-goimports'
 "Plugin 'fuenor/im_control.vim'
 
 call vundle#end()
