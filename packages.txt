@@ -15,6 +15,7 @@ bluez
 bluez-hid2hci
 bluez-utils
 clang
+delve
 dhcpcd
 dialog
 docker
@@ -31,10 +32,12 @@ feh
 figma-linux
 file
 findutils
+firefox
 flameshot
 flex
 flutter
 fortune-mod
+fzf
 gawk
 gcc
 gdb
@@ -54,6 +57,7 @@ gucharmap
 gvim
 gzip
 hdf5
+howdy
 i3-gaps-rounded-git
 i3lock
 inetutils
