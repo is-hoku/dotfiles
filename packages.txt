@@ -64,6 +64,7 @@ inetutils
 intel-ucode
 iw
 jetbrains-toolbox
+jq
 keybase-bin
 kicad
 kicad-footprints
@@ -98,9 +99,15 @@ net-tools
 netctl
 network-manager-applet
 ninja
+node-gyp
+nodejs
+nodejs-nopt
 noto-fonts-emoji
+npm
+nvm
 olive
 oneko
+oniguruma
 opencv
 openssh
 otf-ipafont
@@ -120,6 +127,7 @@ quartus-free
 rofi
 seahorse
 sed
+semver
 slack-desktop
 starship
 strace

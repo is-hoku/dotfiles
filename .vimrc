@@ -14,7 +14,6 @@ set t_Co=256
 set clipboard=unnamedplus
 set shiftwidth=4
 set tabstop=4
-"let g:airline_theme = 'miramare'
 let g:airline_theme = 'sakura'
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -41,10 +40,9 @@ Plugin 'is-hoku/sakura'
 Plugin 'mattn/vim-goimports'
 Plugin 'junegunn/fzf'
 Plugin 'sebdah/vim-delve'
-"Plugin 'fuenor/im_control.vim'
+Plugin 'iamcco/markdown-preview.nvim'
 
 call vundle#end()
-"colorscheme miramare
 colorscheme sakura
 
 if has('persistent_undo')
