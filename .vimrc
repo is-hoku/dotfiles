@@ -22,6 +22,11 @@ set termguicolors
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
+nnoremap j gj
+nnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+nmap <C-k> :LspHover<CR>
 Plugin 'VundleVim/Vundle.vim'
 " Write Plugins here!
 Plugin 'scrooloose/nerdtree'
