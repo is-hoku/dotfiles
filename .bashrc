@@ -12,6 +12,16 @@ PS1='[\u@\h \W]\$ '
 eval "$(starship init bash)"
 eval $(dircolors ~/.dir_colors)
 
+if [ -d "$HOME/.bookmarks" ]; then
+    export CDPATH=".:$HOME/.bookmarks"
+    alias goto="cd -P"
+	_goto()
+	{
+		local IFS=$'\n'
+		COMPREPLY=( $( compgen -W "$(/bin/ls ~/.bookmarks)" -- ${COMP_WORDS[COMP_CWORD]}))
+	} && complete -F _goto goto
+fi
+
 export PATH=$PATH:~/bin
 export GOPATH=~/go
 export PATH="$GOPATH/bin:$PATH"
