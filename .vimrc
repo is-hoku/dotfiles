@@ -43,7 +43,8 @@ Plugin 'prabirshrestha/asyncomplete-lsp.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'is-hoku/sakura'
 Plugin 'mattn/vim-goimports'
-Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
 Plugin 'sebdah/vim-delve'
 Plugin 'iamcco/markdown-preview.nvim'
 
@@ -53,4 +54,11 @@ colorscheme sakura
 if has('persistent_undo')
 	set undodir=~/.vim/undo
 	set undofile
+endif
+
+if executable('rg')
+    command! -bang -nargs=* Rg
+        \ call fzf#vim#grep(
+        \   'rg --line-number --no-heading '.shellescape(<q-args>), 0,
+        \   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'up:50%:wrap'))
 endif
