@@ -3,7 +3,6 @@ acpi
 adobe-source-han-serif-jp-fonts
 adobe-source-han-serif-otc-fonts
 alacritty
-appstream-glib
 arp-scan
 autoconf
 automake
@@ -20,8 +19,6 @@ clang
 delve
 dhcpcd
 dialog
-docbook-xml
-docbook-xsl
 docker
 docker-compose
 dosfstools
@@ -49,7 +46,6 @@ gettext
 gimp
 git
 git-completion
-glib2-docs
 gnome-disk-utility
 gnome-keyring
 google-chrome
@@ -59,7 +55,6 @@ grep
 groff
 grub
 grub2-theme-preview
-gtk-doc
 gucharmap
 gvim
 gzip
@@ -131,10 +126,7 @@ poedit
 polybar
 postman-bin
 pulseaudio-bluetooth
-python-anytree
-python-lxml
 python-pipenv
-python-pygments
 qt5ct
 quartus-free
 ripgrep
@@ -160,7 +152,6 @@ tty-clock
 udevil
 udisks2
 usbutils
-vala
 vi
 vifm
 visual-studio-code-bin
