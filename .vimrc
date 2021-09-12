@@ -18,6 +18,7 @@ let g:airline_theme = 'sakura'
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 let g:lsp_diagnostics_echo_cursor = 1
+let mapleader = "\<Space>"
 set termguicolors
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -47,6 +48,7 @@ Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'sebdah/vim-delve'
 Plugin 'iamcco/markdown-preview.nvim'
+Plugin 'vim-scripts/dbext.vim'
 
 call vundle#end()
 colorscheme sakura
@@ -62,3 +64,8 @@ if executable('rg')
         \   'rg --line-number --no-heading '.shellescape(<q-args>), 0,
         \   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'up:50%:wrap'))
 endif
+
+if filereadable(expand('~/.dbext_profile'))
+	source ~/.dbext_profile
+endif
+let g:dbext_default_history_file = '~/.dbext_history'
