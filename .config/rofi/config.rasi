@@ -1,12 +1,12 @@
 configuration {
 /*	modi: "window,run,ssh";*/
-	width: 50;
-	lines: 15;
-	columns: 2;
+/*	width: 50; not working*/
+/*	lines: 15; not working*/
+/*	columns: 3; not working*/
 	font: "Source Code Pro 12";
 /*	bw: 1;*/
 /*	location: 0;*/
-	padding: 15;
+/*	padding: 15; not working*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
@@ -99,7 +99,7 @@ configuration {
 /*	kb-mode-next: "Shift+Right,Control+Tab";*/
 /*	kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";*/
 	kb-row-left: "Control+h";
-	kb-row-right: "Control+l";
+	kb-row-right: "Control+Shift+l";
 	kb-row-up: "Up,Control+k,ISO_Left_Tab";
 	kb-row-down: "Down,Control+j";
 /*	kb-row-tab: "Tab";*/
@@ -149,90 +149,20 @@ configuration {
 /*	me-select-entry: "MousePrimary";*/
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
+
+	timeout {
+		action: "kb-cancel";
+		delay: 0;
+	}
+
+	filebrowser {
+		directories-first: true;
+		sorting-method: "name";
+	}
 }
 
-* {
-    black:   #3f3740;
-    red:     #ff87ff;
-    green:   #afd7af;
-    yellow:  #d7d787;
-    blue:    #afd7ff;
-    magenta: #af87d7;
-    cyan:    #ffd7ff;
-    white:   #ffffd7;
-	bblack:  #655e66;
-}
-
-window {
-	background-color: @black;
-	border: 1;
-	padding: 20;
-}
-
-mainbox {
-	border: 0;
-	spacing: 0;
-	padding: 0;
-}
-
-message {
-	border: 2px 0px 0px;
-	border-color: @cyan;
-	padding: 1px;
-	background-color: @black;
-}
-
-textbox {
-	text-color: @cyan;
-}
-
-listview {
-	fixed-height: 0;
-	border: 2px 0px 0px;
-	border-color: @blue;
-	background-color: @black;
-	spacing: 2px;
-	scrollbar: false;
-	padding: 0px 0px 0px;
-}
+@theme "sakura"
 
 element {
-	border: 0;
-	background-color: @black;
-	text-color: @cyan;
-	padding: 1px;
-}
-
-element selected.normal {
-	background-color: @bblack;
-	text-color: @cyan;
-}
-
-inputbar {
-	spacing: 0;
-	text-color: @cyan;
-	padding: 0px 0px 0px 0px;
-	background-color: @black;
-	children: [prompt, textbox-prompt-colon, entry];
-}
-
-prompt, button {
-	spacing: 0;
-	text-color: @red;
-	background-color: @black;
-	margin: 0px 5px 0px 0px;
-}
-
-entry {
-	spacing: 0;
-	text-color: @cyan;
-	background-color: @black;
-}
-
-textbox-prompt-colon {
-	expand: false;
-	str: ":";
-	text-color: @red;
-	margin: 0px 10px 0px 0px;
-	background-color: @black;
+	children: [element-icon, element-text];
 }

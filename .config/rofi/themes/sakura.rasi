@@ -1,0 +1,95 @@
+* {
+    black:   #3f3740;
+    red:     #ff87ff;
+    green:   #afd7af;
+    yellow:  #d7d787;
+    blue:    #afd7ff;
+    magenta: #af87d7;
+    cyan:    #ffd7ff;
+    white:   #ffffd7;
+	bblack:  #655e66;
+}
+
+window {
+	background-color: @black;
+	border: 1;
+	padding: 20;
+}
+
+mainbox {
+	border: 0;
+	spacing: 0;
+	padding: 0;
+}
+
+message {
+	border: 2px 0px 0px;
+	border-color: @cyan;
+	padding: 1px;
+	background-color: @black;
+}
+
+textbox {
+	text-color: @cyan;
+}
+
+listview {
+	fixed-height: 0;
+	border: 2px 0px 0px;
+	border-color: @blue;
+	background-color: @black;
+	spacing: 2px;
+	scrollbar: false;
+	padding: 0px 0px 0px;
+}
+
+element {
+	border: 0;
+	background-color: @black;
+	text-color: @cyan;
+	padding: 1px;
+//	background-image: linear-gradient(to bottom, black/20%, white/20%, black/10%);
+}
+
+element-text {
+	background-color: inherit;
+	text-color: inherit;
+}
+
+element-icon {
+	background-color: inherit;
+}
+
+element selected.normal {
+	background-color: @bblack;
+	text-color: @cyan;
+}
+
+inputbar {
+	spacing: 0;
+	text-color: @cyan;
+	padding: 0px 0px 0px 0px;
+	background-color: @black;
+	children: [prompt, textbox-prompt-colon, entry];
+}
+
+prompt, button {
+	spacing: 0;
+	text-color: @red;
+	background-color: @black;
+	margin: 0px 5px 0px 0px;
+}
+
+entry {
+	spacing: 0;
+	text-color: @cyan;
+	background-color: @black;
+}
+
+textbox-prompt-colon {
+	expand: false;
+	str: ":";
+	text-color: @red;
+	margin: 0px 10px 0px 0px;
+	background-color: @black;
+}
