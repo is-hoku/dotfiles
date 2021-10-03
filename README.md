@@ -7,7 +7,7 @@
 - WM: i3-gaps   
 - Terminal: alacritty   
 - Shell: bash   
-- Editor: Vim   
+- Editor: vim   
 - Bar: polybar   
 - Launcher: rofi   
 - File Manager: vifm, pcmanfm   
