@@ -72,3 +72,11 @@ endif
 let g:dbext_default_history_file = '~/.dbext_history'
 
 command! Jqf %!jq '.'
+
+let g:eskk#directory = "~/.config/eskk"
+let g:eskk#dictionary = {'path': "~/.config/eskk/my_jisyo", 'sorted': 1, 'encoding': 'utf-8',}
+let g:eskk#large_dictionary = {'path': "~/.config/eskk/SKK-JISYO.L", 'sorted': 1, 'encoding': 'euc-jp',}
+let g:eskk#sub_dictionaries = {}
+let g:eskk#kakutei_when_unique_candidate = 1
+let g:eskk#keep_state = 0
+let g:eskk#egg_like_newline = 1
