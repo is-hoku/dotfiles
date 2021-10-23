@@ -49,6 +49,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'sebdah/vim-delve'
 Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'vim-scripts/dbext.vim'
+Plugin 'tyru/eskk.vim'
 
 call vundle#end()
 colorscheme sakura
@@ -59,10 +60,10 @@ if has('persistent_undo')
 endif
 
 if executable('rg')
-    command! -bang -nargs=* Rg
-        \ call fzf#vim#grep(
-        \   'rg --line-number --no-heading '.shellescape(<q-args>), 0,
-        \   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'up:50%:wrap'))
+	command! -bang -nargs=* Rg
+		\ call fzf#vim#grep(
+		\   'rg --line-number --no-heading '.shellescape(<q-args>), 0,
+		\   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'up:50%:wrap'))
 endif
 
 if filereadable(expand('~/.dbext_profile'))
