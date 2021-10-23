@@ -163,6 +163,8 @@ rofi
 seahorse
 sed
 semver
+skk-jisyo
+skktools
 slack-desktop
 starship
 strace
