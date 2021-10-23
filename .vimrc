@@ -69,3 +69,5 @@ if filereadable(expand('~/.dbext_profile'))
 	source ~/.dbext_profile
 endif
 let g:dbext_default_history_file = '~/.dbext_history'
+
+command! Jqf %!jq '.'

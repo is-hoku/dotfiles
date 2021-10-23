@@ -7,6 +7,8 @@ appstream-glib
 arp-scan
 autoconf
 automake
+aws-cli
+aws-sam-cli
 base
 bind
 binutils
@@ -41,6 +43,7 @@ flameshot
 flex
 flutter
 fortune-mod
+freerdp
 fzf
 gawk
 gcab
@@ -50,6 +53,7 @@ gettext
 gimp
 git
 git-completion
+git-secrets
 glib2-docs
 gnome-disk-utility
 gnome-keyring
@@ -65,6 +69,7 @@ gucharmap
 gvim
 gzip
 hdf5
+heroku-cli
 howdy
 hugo
 i3-gaps-rounded-git
@@ -80,6 +85,7 @@ kicad-footprints
 kicad-symbols
 kicad-templates
 libtool
+libvncserver
 light
 light-locker
 lightdm
@@ -121,6 +127,8 @@ opencv
 openssh
 otf-ipafont
 pacman
+pandoc
+paru
 patch
 pavucontrol
 pcmanfm
@@ -133,11 +141,23 @@ polybar
 postman-bin
 pulseaudio-bluetooth
 python-anytree
+python-babel
+python-imagesize
 python-lxml
 python-pipenv
 python-pygments
+python-snowballstemmer
+python-sphinx
+python-sphinx-alabaster-theme
+python-sphinxcontrib-applehelp
+python-sphinxcontrib-devhelp
+python-sphinxcontrib-htmlhelp
+python-sphinxcontrib-jsmath
+python-sphinxcontrib-qthelp
+python-sphinxcontrib-serializinghtml
 qt5ct
 quartus-free
+remmina
 ripgrep
 rofi
 seahorse
@@ -169,6 +189,7 @@ vlc
 w3m
 which
 woeusb
+words
 wpa_supplicant
 wps-office
 xf86-video-fbdev
@@ -213,8 +234,8 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xrdp
 xterm
-yay-git
 yubioath-desktop
 z3
 zathura
