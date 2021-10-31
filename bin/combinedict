@@ -1,0 +1,15 @@
+#!/bin/bash
+
+temp=OUTPUT
+dic_dir=~/.config/eskk
+
+touch $temp
+
+for f in $(find $dic_dir -name "SKK-JISYO*" | xargs)
+do
+	cat $f >> $temp
+done
+
+skkdic-expr2 $temp > SKK-JISYO.LL
+
+rm $temp
