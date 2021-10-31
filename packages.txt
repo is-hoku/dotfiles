@@ -34,6 +34,7 @@ fcitx
 fcitx-configtool
 fcitx-mozc
 fcitx-qt5
+fcitx-skk
 feh
 figma-linux
 file
