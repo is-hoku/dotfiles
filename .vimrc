@@ -31,6 +31,9 @@ nmap <C-k> :LspHover<CR>
 nmap <C-l> :LspDefinition<CR>
 autocmd FileType c ClangFormatAutoEnable
 autocmd FileType cpp ClangFormatAutoEnable
+set iminsert=0
+set imsearch=0
+set imcmdline
 Plugin 'VundleVim/Vundle.vim'
 " Write Plugins here!
 Plugin 'scrooloose/nerdtree'
