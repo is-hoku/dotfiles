@@ -31,9 +31,6 @@ nmap <C-k> :LspHover<CR>
 nmap <C-l> :LspDefinition<CR>
 autocmd FileType c ClangFormatAutoEnable
 autocmd FileType cpp ClangFormatAutoEnable
-set iminsert=0
-set imsearch=0
-set imcmdline
 Plugin 'VundleVim/Vundle.vim'
 " Write Plugins here!
 Plugin 'scrooloose/nerdtree'
@@ -55,7 +52,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'sebdah/vim-delve'
 Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'vim-scripts/dbext.vim'
-Plugin 'tyru/eskk.vim'
+Plugin 'vim-skk/eskk.vim'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'kana/vim-operator-user'
 
@@ -84,7 +81,21 @@ command! Jqf %!jq '.'
 let g:eskk#directory = "~/.config/eskk"
 let g:eskk#dictionary = {'path': "~/.config/eskk/my_jisyo", 'sorted': 1, 'encoding': 'utf-8',}
 let g:eskk#large_dictionary = {'path': "~/.config/eskk/SKK-JISYO.LL", 'sorted': 1, 'encoding': 'euc-jp',}
-let g:eskk#sub_dictionaries = {}
 let g:eskk#kakutei_when_unique_candidate = 1
 let g:eskk#keep_state = 0
 let g:eskk#egg_like_newline = 1
+
+set iminsert=0
+set imsearch=0
+set imactivatefunc=ImActivate
+function! ImActivate(active)
+  if a:active
+    call system('fcitx-remote -o')
+  else
+    call system('fcitx-remote -c')
+  endif
+endfunction
+set imstatusfunc=ImStatus
+function! ImStatus()
+  return system('fcitx-remote')[0] is# '2'
+endfunction

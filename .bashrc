@@ -29,3 +29,5 @@ export PATH="$GOPATH/bin:$PATH"
 export QSYS_ROOTDIR="/home/hoku/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/20.1/quartus/sopc_builder/bin"
 
 source /usr/share/git/completion/git-completion.bash
+
+export FCITX_CONFIG_DIR="/home/hoku/.config/fcitx"
