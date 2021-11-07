@@ -1,0 +1,5 @@
+#!/bin/bash
+CONFIG_DIR=~/bin
+source "${CONFIG_DIR:?}/config.sh" "$1"
+OUTPUT_FILE=`echo $2 | sed 's/\.[^\.]*$/.docx/'`
+pandoc ${BASE_DIR}/$2 --from=markdown --to=docx --standalone --reference-doc=$REFERENCE --output=$OUTPUT_FILE
