@@ -4,6 +4,7 @@ adobe-source-han-serif-jp-fonts
 adobe-source-han-serif-otc-fonts
 alacritty
 appstream-glib
+arandr
 arp-scan
 autoconf
 automake

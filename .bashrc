@@ -18,7 +18,7 @@ if [ -d "$HOME/.bookmarks" ]; then
 	_goto()
 	{
 		local IFS=$'\n'
-		COMPREPLY=( $( compgen -W "$(/bin/ls ~/.bookmarks)" -- ${COMP_WORDS[COMP_CWORD]}))
+		COMPREPLY=( $(compgen -W "$(/bin/ls ~/.bookmarks)" -- "${COMP_WORDS[COMP_CWORD]}") )
 	} && complete -F _goto goto
 fi
 
