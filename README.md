@@ -19,6 +19,20 @@
 - Clock: tty-clock   
 - Fetch: neofetch, pfetch   
 
+## bookmarks in bash
+Create the directory.  
+```
+mkdir ~/.bookmarks
+```
+Create a new symbolic link.  
+```
+ln -s path/to/certain/directory/with/my/project ~/.bookmark/project_name
+```
+You can use goto command (an alias for cd).  
+```
+goto project_name
+```
+
 ## create a symbolic link
 ```
 mv ~/.bashrc ~/dotfiles
