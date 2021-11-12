@@ -32,9 +32,3 @@ You can use goto command (an alias for cd).
 ```
 goto project_name
 ```
-
-## create a symbolic link
-```
-mv ~/.bashrc ~/dotfiles
-ln -s ~/dotfiles/.bashrc ~/.bashrc
-```
