@@ -245,7 +245,7 @@ label-song-ellipsis = true
 
 [module/player-mpris-tail]
 type = custom/script
-exec = ~/.config/polybar/polybar-scripts/player-mpris-tail.py -f '{icon} {:artist:t18:{artist}:}{:artist: - :}{:t20:{title}:}  %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py previous -b vlc -b plasma-browser-integration:}  %{A} %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py play-pause -b vlc -b plasma-browser-integration:} {icon-reversed} %{A} %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py next -b vlc -b plasma-browser-integration:}  %{A}' -b vlc -b plasma-browser-integration
+exec = ~/.config/polybar/polybar-scripts/player-mpris-tail.py -f '{icon} {:artist:t10:{artist}:}{:artist: - :}{:t10:{title}:}  %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py previous -b vlc -b plasma-browser-integration:}  %{A} %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py play-pause -b vlc -b plasma-browser-integration:} {icon-reversed} %{A} %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py next -b vlc -b plasma-browser-integration:}  %{A}' -b vlc -b plasma-browser-integration
 tail = true
 
 [module/xbacklight]
