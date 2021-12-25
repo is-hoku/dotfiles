@@ -34,7 +34,6 @@ nmap <C-l> :LspDefinition<CR>
 autocmd FileType c ClangFormatAutoEnable
 autocmd FileType cpp ClangFormatAutoEnable
 Plugin 'VundleVim/Vundle.vim'
-" Write Plugins here!
 Plugin 'scrooloose/nerdtree'
 Plugin 'franbach/miramare'
 Plugin 'tomasr/molokai'
@@ -58,6 +57,9 @@ Plugin 'vim-skk/eskk.vim'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'kana/vim-operator-user'
 Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+let g:prettier#autoformat_require_pragma = 0
+let g:prettier#autoformat = 1
 
 call vundle#end()
 colorscheme sakura

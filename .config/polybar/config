@@ -64,7 +64,7 @@ font-3 = Material Icons:pixelsize=10;1
 
 ;modules-left = bspwm i3 memory cpu
 modules-left = powermenu i3 memory cpu
-;modules-center = mpd
+modules-center = player-mpris-tail
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 modules-right = pulseaudio wlan battery date
 tray-position = right
@@ -233,6 +233,11 @@ format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 
 label-song-maxlen = 25
 label-song-ellipsis = true
+
+[module/player-mpris-tail]
+type = custom/script
+exec = ~/.config/polybar/polybar-scripts/player-mpris-tail.py -f '{icon} {:artist:t18:{artist}:}{:artist: - :}{:t20:{title}:}  %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py previous -b vlc -b plasma-browser-integration:}  %{A} %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py play-pause -b vlc -b plasma-browser-integration:} {icon-reversed} %{A} %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py next -b vlc -b plasma-browser-integration:}  %{A}' -b vlc -b plasma-browser-integration
+tail = true
 
 [module/xbacklight]
 type = internal/xbacklight
