@@ -27,6 +27,15 @@ primary = #ff87ff
 secondary = #afd7ff
 alert = #d75f5f
 
+black = #3f3740
+red = #ff87ff
+green = #afd7af
+yellow = #d7d787
+blue = #afd7ff
+magenta = #af87d7
+cyan = #ffd7ff
+white = #ffffd7
+
 [bar/sakura]
 ;monitor = ${env:MONITOR:HDMI-1}
 monitor = ${env:MONITOR:}
@@ -63,7 +72,7 @@ font-2 = Font Awesome:pixelsize=10;1
 font-3 = Material Icons:pixelsize=10;1
 
 ;modules-left = bspwm i3 memory cpu
-modules-left = powermenu i3 memory cpu
+modules-left = powermenu i3 memory cpu cpu-graph
 modules-center = player-mpris-tail
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 modules-right = pulseaudio wlan battery date
@@ -270,6 +279,30 @@ format-underline = #f90000
 ;label =  %percentage:2%%
 label = CPU: %percentage:2%%
 
+[module/cpu-graph]
+type = internal/cpu
+interval = 0.08
+format = " <ramp-coreload>"
+format-underline = ${colors.adapta-cyan}
+format-margin = ${margin.for-modules}
+format-padding = 1
+ramp-coreload-0 = ▁
+ramp-coreload-0-foreground = ${colors.cyan}
+ramp-coreload-1 = ▂
+ramp-coreload-1-foreground = ${colors.blue}
+ramp-coreload-2 = ▃
+ramp-coreload-2-foreground = ${colors.green}
+ramp-coreload-3 = ▄
+ramp-coreload-3-foreground = ${colors.green}
+ramp-coreload-4 = ▅
+ramp-coreload-4-foreground = ${colors.yellow}
+ramp-coreload-5 = ▆
+ramp-coreload-5-foreground = ${colors.yellow}
+ramp-coreload-6 = ▇
+ramp-coreload-6-foreground = ${colors.red}
+ramp-coreload-7 = █
+ramp-coreload-7-foreground = ${colors.red}
+
 [module/memory]
 type = internal/memory
 interval = 2
@@ -412,13 +445,18 @@ ramp-capacity-1 = 
 ramp-capacity-2 =  
 ramp-capacity-3 =  
 ramp-capacity-4 =  
-ramp-capacity-foreground = ${colors.foreground-alt}
+;ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-0-foreground = ${colors.red}
+ramp-capacity-1-foreground = ${colors.cyan}
+ramp-capacity-2-foreground = ${colors.cyan}
+ramp-capacity-3-foreground = ${colors.cyan}
+ramp-capacity-4-foreground = ${colors.cyan}
 
-animation-charging-0 =  
-animation-charging-1 =  
-animation-charging-2 =  
-animation-charging-3 =  
-animation-charging-4 = 
+animation-charging-0 =  
+animation-charging-1 =  
+animation-charging-2 =  
+animation-charging-3 =  
+animation-charging-4 =  
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
