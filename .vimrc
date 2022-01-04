@@ -1,4 +1,6 @@
 set number
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 imap <Nul> <C-Space>
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
