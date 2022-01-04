@@ -19,6 +19,7 @@ blueman
 bluez
 bluez-hid2hci
 bluez-utils
+bonsai.sh-git
 clang
 delve
 dhcpcd
@@ -28,6 +29,7 @@ docbook-xsl
 docker
 docker-compose
 dosfstools
+downgrade
 dunst
 efibootmgr
 fakeroot
@@ -115,6 +117,7 @@ nerd-fonts-source-code-pro
 net-tools
 netctl
 network-manager-applet
+ngrok
 ninja
 node-gyp
 nodejs
@@ -136,6 +139,7 @@ pavucontrol
 pcmanfm
 pfetch
 picom
+pipes.sh
 pkgconf
 pkgfile
 poedit
@@ -168,11 +172,13 @@ semver
 skk-jisyo
 skktools
 slack-desktop
+spotify
 starship
 strace
 sudo
 sxiv
 teams
+tesseract
 texinfo
 thunderbird
 timeshift
@@ -240,6 +246,7 @@ xorg-xwininfo
 xorg-xwud
 xrdp
 xterm
+yarn
 yubioath-desktop
 z3
 zathura
