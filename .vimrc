@@ -60,8 +60,8 @@ Plugin 'rhysd/vim-clang-format'
 Plugin 'kana/vim-operator-user'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
-let g:prettier#autoformat_require_pragma = 0
-let g:prettier#autoformat = 1
+Plugin 'nvie/vim-flake8'
+Plugin 'tell-k/vim-autopep8'
 
 call vundle#end()
 colorscheme sakura
@@ -71,6 +71,7 @@ if has('persistent_undo')
 	set undofile
 endif
 
+" junegunn/fzf junegunn/fzf.vim
 if executable('rg')
 	command! -bang -nargs=* Rg
 		\ call fzf#vim#grep(
@@ -78,6 +79,7 @@ if executable('rg')
 		\   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'up:50%:wrap'))
 endif
 
+" vim-scripts/dbext.vim
 if filereadable(expand('~/.dbext_profile'))
 	source ~/.dbext_profile
 endif
@@ -85,6 +87,7 @@ let g:dbext_default_history_file = '~/.dbext_history'
 
 command! Jqf %!jq '.'
 
+" vim-skk/eskk.vim
 let g:eskk#directory = "~/.config/eskk"
 let g:eskk#dictionary = {'path': "~/.config/eskk/my_jisyo", 'sorted': 1, 'encoding': 'utf-8',}
 let g:eskk#large_dictionary = {'path': "~/.config/eskk/SKK-JISYO.LL", 'sorted': 1, 'encoding': 'euc-jp',}
@@ -107,6 +110,7 @@ function! ImStatus()
   return system('fcitx-remote')[0] is# '2'
 endfunction
 
+" dhruvasagar/vim-table-mode
 let g:table_mode_corner='|'
 function! s:isAtStartOfLine(mapping)
   let text_before_cursor = getline('.')[0 : col('.')-1]
@@ -121,3 +125,13 @@ inoreabbrev <expr> <bar><bar>
 inoreabbrev <expr> __
           \ <SID>isAtStartOfLine('__') ?
           \ '<c-o>:silent! TableModeDisable<cr>' : '__'
+
+" prettier/vim-prettier
+let g:prettier#autoformat_require_pragma = 0
+let g:prettier#autoformat = 1
+
+" hhatto/autopep8
+"let g:autopep8_on_save = 1
+autocmd BufWritePost *.py :silent! %!autopep8 -
+" nvie/vim-flake8
+autocmd BufWritePost *.py call flake8#Flake8()
