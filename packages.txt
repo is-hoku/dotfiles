@@ -8,6 +8,7 @@ arandr
 arp-scan
 autoconf
 automake
+autopep8
 aws-cli
 aws-sam-cli
 base
@@ -43,6 +44,7 @@ figma-linux
 file
 findutils
 firefox
+flake8
 flameshot
 flex
 flutter
