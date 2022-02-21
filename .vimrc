@@ -62,6 +62,7 @@ Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plugin 'nvie/vim-flake8'
 Plugin 'tell-k/vim-autopep8'
+Plugin 'hashivim/vim-terraform'
 
 call vundle#end()
 colorscheme sakura
@@ -135,3 +136,8 @@ let g:prettier#autoformat = 1
 autocmd BufWritePost *.py :silent! %!autopep8 -
 " nvie/vim-flake8
 autocmd BufWritePost *.py call flake8#Flake8()
+
+" hashivim/vim-terraform
+let g:terraform_binary_path = '/usr/bin/terraform'
+"let g:terraform_fmt_on_save = 1
+autocmd BufWritePost *.tf call terraform#fmt()

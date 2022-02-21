@@ -182,6 +182,7 @@ sxiv
 teams
 tesseract
 texinfo
+tfenv
 thunderbird
 timeshift
 tk
