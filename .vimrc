@@ -35,6 +35,9 @@ nnoremap <expr><c-d> lsp#scroll(-4)
 nmap <C-l> :LspDefinition<CR>
 autocmd FileType c ClangFormatAutoEnable
 autocmd FileType cpp ClangFormatAutoEnable
+command! Jqf %!jq '.'
+autocmd BufWritePost *.json Jqf
+
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'franbach/miramare'
@@ -85,8 +88,6 @@ if filereadable(expand('~/.dbext_profile'))
 	source ~/.dbext_profile
 endif
 let g:dbext_default_history_file = '~/.dbext_history'
-
-command! Jqf %!jq '.'
 
 " vim-skk/eskk.vim
 let g:eskk#directory = "~/.config/eskk"
