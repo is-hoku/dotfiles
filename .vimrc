@@ -37,6 +37,7 @@ autocmd FileType c ClangFormatAutoEnable
 autocmd FileType cpp ClangFormatAutoEnable
 command! Jqf %!jq '.'
 autocmd BufWritePost *.json Jqf
+autocmd BufWritePost *.java :silent! %!google-java-format -
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
@@ -66,6 +67,7 @@ Plugin 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --produc
 Plugin 'nvie/vim-flake8'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'hashivim/vim-terraform'
+Plugin 'mhinz/vim-rfc'
 
 call vundle#end()
 colorscheme sakura
