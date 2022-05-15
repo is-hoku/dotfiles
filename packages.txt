@@ -32,6 +32,7 @@ docker-compose
 dosfstools
 downgrade
 dunst
+eclipse-jee
 efibootmgr
 fakeroot
 fcitx
@@ -64,6 +65,7 @@ glib2-docs
 gnome-disk-utility
 gnome-keyring
 google-chrome
+google-java-format
 gotop
 gparted
 grep
@@ -83,15 +85,13 @@ i3lock
 inetutils
 intel-ucode
 iw
+jdk
 jetbrains-toolbox
 jq
 keybase-bin
-kicad
-kicad-footprints
-kicad-symbols
-kicad-templates
 libtool
 libvncserver
+libxcrypt-compat
 light
 light-locker
 lightdm
@@ -110,6 +110,7 @@ m4
 make
 man-db
 man-pages
+maven
 mesa
 mpc
 mpd
@@ -180,7 +181,7 @@ strace
 sudo
 sxiv
 teams
-tesseract
+terraform-docs
 texinfo
 tfenv
 thunderbird
@@ -201,6 +202,7 @@ visual-studio-code-bin
 vlc
 w3m
 which
+wireshark-qt
 woeusb
 words
 wpa_supplicant
