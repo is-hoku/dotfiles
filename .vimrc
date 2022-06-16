@@ -68,6 +68,10 @@ Plugin 'nvie/vim-flake8'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'hashivim/vim-terraform'
 Plugin 'mhinz/vim-rfc'
+Plugin 'xavierchow/vim-swagger-preview'
+Plugin 'weirongxu/plantuml-previewer.vim'
+Plugin 'tyru/open-browser.vim'
+Plugin 'aklt/plantuml-syntax'
 
 call vundle#end()
 colorscheme sakura
