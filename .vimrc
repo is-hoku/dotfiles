@@ -9,7 +9,7 @@ set autoindent
 set smartindent
 set cindent
 syntax on
-"set hlsearch
+set hlsearch
 set incsearch
 set wildmenu
 set t_Co=256
@@ -38,6 +38,7 @@ autocmd FileType cpp ClangFormatAutoEnable
 command! Jqf %!jq '.'
 autocmd BufWritePost *.json Jqf
 autocmd BufWritePost *.java :silent! %!google-java-format -
+nmap <Esc><Esc> :nohl<CR>
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
