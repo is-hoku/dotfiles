@@ -33,6 +33,7 @@ nmap <C-k> :LspHover<CR>
 nnoremap <expr><c-f> lsp#scroll(+4)
 nnoremap <expr><c-d> lsp#scroll(-4)
 nmap <C-l> :LspDefinition<CR>
+nmap <C-j> :LspReferences<CR>
 autocmd FileType c ClangFormatAutoEnable
 autocmd FileType cpp ClangFormatAutoEnable
 command! Jqf %!jq '.'
