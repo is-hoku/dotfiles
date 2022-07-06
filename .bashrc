@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias grep='grep --color'
 alias mozc-settings='/usr/lib/mozc/mozc_tool --mode=config_dialog'
 PS1='[\u@\h \W]\$ '
 
@@ -90,3 +91,8 @@ function swagger_preview() {
     fi
 }
 export -f swagger_preview
+
+function goinstall() {
+	go install $1 && echo go install $1 >> ~/dotfiles/install.sh
+}
+export -f goinstall
