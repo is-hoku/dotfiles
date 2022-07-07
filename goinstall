@@ -1,0 +1,5 @@
+go install goa.design/goa/v3/cmd/goa@latest
+go install golang.org/x/tools/cmd/godoc@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/rakyll/gotest@latest
+go install github.com/shogo82148/goa-v1/...@v1.5.2
