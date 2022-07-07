@@ -42,7 +42,8 @@ autocmd BufWritePost *.java :silent! %!google-java-format -
 nmap <Esc><Esc> :nohl<CR>
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree' |
+            \ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'franbach/miramare'
 Plugin 'tomasr/molokai'
 Plugin 'vim-airline/vim-airline'
@@ -74,6 +75,9 @@ Plugin 'xavierchow/vim-swagger-preview'
 Plugin 'weirongxu/plantuml-previewer.vim'
 Plugin 'tyru/open-browser.vim'
 Plugin 'aklt/plantuml-syntax'
+Plugin 'mbbill/undotree'
+Plugin 'yuttie/comfortable-motion.vim'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 colorscheme sakura
@@ -82,6 +86,22 @@ if has('persistent_undo')
 	set undodir=~/.vim/undo
 	set undofile
 endif
+
+" Xuyuanp/nerdtree-git-plugin
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
+let g:NERDTreeGitStatusUseNerdFonts = 1
+let g:NERDTreeGitStatusShowIgnored = 1
 
 " junegunn/fzf junegunn/fzf.vim
 if executable('rg')
@@ -150,3 +170,6 @@ autocmd BufWritePost *.py call flake8#Flake8()
 let g:terraform_binary_path = '/usr/bin/terraform'
 "let g:terraform_fmt_on_save = 1
 autocmd BufWritePost *.tf call terraform#fmt()
+
+" mbbill/undotree
+nnoremap <C-m> :UndotreeToggle<CR>
