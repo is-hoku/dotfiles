@@ -8,7 +8,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color'
 alias mozc-settings='/usr/lib/mozc/mozc_tool --mode=config_dialog'
-PS1='[\uh \W]\$ '
+PS1='[\u@\h \W]\$ '
 
 eval "$(starship init bash)"
 eval $(dircolors ~/.dir_colors)
