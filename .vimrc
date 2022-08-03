@@ -30,8 +30,8 @@ nnoremap k gk
 nnoremap <Down> gj
 nnoremap <Up> gk
 nmap <C-k> :LspHover<CR>
-nnoremap <expr><c-f> lsp#scroll(+4)
-nnoremap <expr><c-d> lsp#scroll(-4)
+nnoremap <expr><Leader>j lsp#scroll(+4)
+nnoremap <expr><Leader>k lsp#scroll(-4)
 nmap <C-l> :LspDefinition<CR>
 nmap <C-j> :LspReferences<CR>
 autocmd FileType c ClangFormatAutoEnable
@@ -172,4 +172,4 @@ let g:terraform_binary_path = '/usr/bin/terraform'
 autocmd BufWritePost *.tf call terraform#fmt()
 
 " mbbill/undotree
-nnoremap <C-m> :UndotreeToggle<CR>
+ nnoremap <C-p> :UndotreeToggle<CR>
