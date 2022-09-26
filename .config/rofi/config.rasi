@@ -100,7 +100,7 @@ configuration {
 /*	kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";*/
 	kb-row-left: "Control+h";
 	kb-row-right: "Control+Shift+l";
-	kb-row-up: "Up,Control+k,ISO_Left_Tab";
+	kb-row-up: "Up,Control+k";
 	kb-row-down: "Down,Control+j";
 /*	kb-row-tab: "Tab";*/
 /*	kb-page-prev: "Page_Up";*/
