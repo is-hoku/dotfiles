@@ -23,6 +23,7 @@ bluez-utils
 bonsai.sh-git
 cava
 clang
+crudini
 delve
 dhcpcd
 dialog
@@ -32,6 +33,7 @@ docker
 docker-compose
 dosfstools
 downgrade
+drawio-desktop
 dunst
 eclipse-jee
 efibootmgr
@@ -155,6 +157,7 @@ python-babel
 python-imagesize
 python-lxml
 python-pipenv
+python-protobuf
 python-pygments
 python-snowballstemmer
 python-sphinx
@@ -215,6 +218,7 @@ xorg-bdftopcf
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
+xorg-server-xephyr
 xorg-sessreg
 xorg-setxkbmap
 xorg-smproxy
@@ -228,6 +232,7 @@ xorg-xcursorgen
 xorg-xdpyinfo
 xorg-xdriinfo
 xorg-xev
+xorg-xeyes
 xorg-xgamma
 xorg-xhost
 xorg-xinit
@@ -253,6 +258,7 @@ xorg-xwud
 xrdp
 xterm
 yarn
+yubikey-manager-qt
 yubioath-desktop
 z3
 zathura
