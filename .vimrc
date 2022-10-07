@@ -47,7 +47,7 @@ nmap <Esc><Esc> :nohl<CR>
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree' |
-            \ Plugin 'Xuyuanp/nerdtree-git-plugin'
+		\ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'franbach/miramare'
 Plugin 'tomasr/molokai'
 Plugin 'vim-airline/vim-airline'
@@ -93,17 +93,17 @@ endif
 
 " Xuyuanp/nerdtree-git-plugin
 let g:NERDTreeGitStatusIndicatorMapCustom = {
-                \ 'Modified'  :'✹',
-                \ 'Staged'    :'✚',
-                \ 'Untracked' :'✭',
-                \ 'Renamed'   :'➜',
-                \ 'Unmerged'  :'═',
-                \ 'Deleted'   :'✖',
-                \ 'Dirty'     :'✗',
-                \ 'Ignored'   :'☒',
-                \ 'Clean'     :'✔︎',
-                \ 'Unknown'   :'?',
-                \ }
+	\ 'Modified'  :'✹',
+	\ 'Staged'	  :'✚',
+	\ 'Untracked' :'✭',
+	\ 'Renamed'   :'➜',
+	\ 'Unmerged'  :'═',
+	\ 'Deleted'   :'✖',
+	\ 'Dirty'	  :'✗',
+	\ 'Ignored'   :'☒',
+	\ 'Clean'	  :'✔︎',
+	\ 'Unknown'   :'?',
+	\ }
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeGitStatusShowIgnored = 1
 
@@ -111,8 +111,8 @@ let g:NERDTreeGitStatusShowIgnored = 1
 if executable('rg')
 	command! -bang -nargs=* Rg
 		\ call fzf#vim#grep(
-		\   'rg --line-number --no-heading '.shellescape(<q-args>), 0,
-		\   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'up:50%:wrap'))
+		\ 'rg --line-number --no-heading '.shellescape(<q-args>), 0,
+		\ fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'up:50%:wrap'))
 endif
 
 " vim-scripts/dbext.vim
