@@ -9,6 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color'
 alias mozc-settings='/usr/lib/mozc/mozc_tool --mode=config_dialog'
 PS1='[\u@\h \W]\$ '
+set -o vi
 
 eval "$(starship init bash)"
 eval $(dircolors ~/.dir_colors)
@@ -105,3 +106,5 @@ function goupdate() {
 	done < ~/dotfiles/goinstall
 }
 export -f goupdate
+
+eval $(opam env)

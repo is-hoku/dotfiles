@@ -9,6 +9,8 @@ set autoindent
 set smartindent
 set cindent
 syntax on
+filetype plugin on
+filetype indent on
 set hlsearch
 set incsearch
 set wildmenu
@@ -174,4 +176,22 @@ let g:terraform_binary_path = '/usr/bin/terraform'
 autocmd BufWritePost *.tf call terraform#fmt()
 
 " mbbill/undotree
- nnoremap <C-p> :UndotreeToggle<CR>
+nnoremap <C-p> :UndotreeToggle<CR>
+
+" merlin
+let g:opamshare = substitute(system('opam var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
+" ocp-indent
+set rtp^="/home/hoku/.opam/4.14.0/share/ocp-indent/vim"
+
+function! s:ocaml_format()
+	let now_line = line('.')
+	exec ':%! ocp-indent'
+	exec ':' . now_line
+endfunction
+
+augroup ocaml_format
+	autocmd!
+	autocmd BufWrite,FileWritePre,FileAppendPre *.mli\= call s:ocaml_format()
+augroup END
