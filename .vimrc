@@ -13,7 +13,10 @@ filetype plugin on
 filetype indent on
 set hlsearch
 set incsearch
+set ignorecase
+set smartcase
 set wildmenu
+set wildignorecase
 set t_Co=256
 set clipboard=unnamedplus
 " set clipboard=unnamed (Mac)
