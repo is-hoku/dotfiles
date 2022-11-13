@@ -4,20 +4,21 @@
 
 
 ## Contents
-- OS: Arch Linux   
-- WM: i3-gaps   
-- Terminal: alacritty   
-- Shell: bash   
-- Editor: vim   
-- Bar: polybar   
-- Launcher: rofi   
-- File Manager: vifm, pcmanfm   
-- PDF Viewer: zathura   
-- Image Viewer: sxiv   
-- Notification Daemon: dunst   
-- Screenshot Tool: flameshot   
-- Clock: tty-clock   
-- Fetch: neofetch, pfetch   
+- OS: Arch Linux
+- WM: i3-gaps
+- Terminal: alacritty
+- Shell: bash
+- Editor: vim
+- Bar: polybar
+- Launcher: rofi
+- File Manager: vifm, pcmanfm
+- PDF Viewer: zathura
+- Image Viewer: sxiv
+- Notification Daemon: dunst
+- Screenshot Tool: flameshot
+- Clock: tty-clock
+- Fetch: neofetch, pfetch
+- Clipboard Manager: greenclip
 
 ## bookmarks in bash
 Create the directory.  
