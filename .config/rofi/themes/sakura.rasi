@@ -94,3 +94,7 @@ textbox-prompt-colon {
 	margin: 0px 10px 0px 0px;
 	background-color: @black;
 }
+
+mode-switcher {
+	background-color: @blue;
+}
