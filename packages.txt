@@ -84,6 +84,7 @@ howdy
 hugo
 i3-gaps-rounded-git
 i3lock
+imhex
 inetutils
 intel-ucode
 iw
@@ -118,7 +119,6 @@ mpc
 mpd
 ncmpcpp
 neofetch
-nerd-fonts-source-code-pro
 net-tools
 netctl
 network-manager-applet
@@ -133,8 +133,10 @@ nvm
 olive
 oneko
 oniguruma
+opam
 opencv
 openssh
+openssl-1.1
 otf-ipafont
 packettracer
 pacman
@@ -150,10 +152,12 @@ pkgconf
 pkgfile
 poedit
 polybar
-postman-bin
 pulseaudio-bluetooth
 python-anytree
 python-babel
+python-build
+python-gitdb
+python-gitpython
 python-imagesize
 python-lxml
 python-pipenv
@@ -169,10 +173,12 @@ python-sphinxcontrib-jsmath
 python-sphinxcontrib-qthelp
 python-sphinxcontrib-serializinghtml
 qt5ct
+qtspim
 quartus-free
 remmina
 ripgrep
 rofi
+rofi-greenclip
 seahorse
 sed
 semver
@@ -195,6 +201,7 @@ tmux
 tree
 ttf-all-the-icons
 ttf-jetbrains-mono
+ttf-sourcecodepro-nerd
 tty-clock
 udevil
 udisks2
