@@ -7,7 +7,7 @@
     magenta: #af87d7;
     cyan:    #ffd7ff;
     white:   #ffffd7;
-	bblack:  #655e66;
+    bblack:  #655e66;
 }
 
 window {
@@ -31,6 +31,7 @@ message {
 
 textbox {
 	text-color: @cyan;
+	background-color: @black;
 }
 
 listview {
