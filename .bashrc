@@ -108,3 +108,5 @@ function goupdate() {
 export -f goupdate
 
 eval $(opam env)
+
+export WINEPREFIX=~/.wine
