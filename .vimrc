@@ -47,6 +47,8 @@ command! Jqf %!jq '.'
 autocmd BufWritePost *.json Jqf
 autocmd BufWritePost *.java :silent! %!google-java-format -
 nmap <Esc><Esc> :nohl<CR>
+autocmd QuickFixCmdPost *grep* cwindow
+autocmd QuickFixCmdPost *make* cwindow
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree' |
@@ -127,7 +129,7 @@ let g:dbext_default_history_file = '~/.dbext_history'
 " vim-skk/eskk.vim
 let g:eskk#directory = "~/.config/eskk"
 let g:eskk#dictionary = {'path': "~/.config/eskk/my_jisyo", 'sorted': 1, 'encoding': 'utf-8',}
-let g:eskk#large_dictionary = {'path': "~/.config/eskk/SKK-JISYO.LL", 'sorted': 1, 'encoding': 'euc-jp',}
+let g:eskk#large_dictionary = {'path': "~/.config/eskk/SKK-JISYO.L", 'sorted': 1, 'encoding': 'euc-jp',}
 let g:eskk#kakutei_when_unique_candidate = 1
 let g:eskk#keep_state = 0
 let g:eskk#egg_like_newline = 1
