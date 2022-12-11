@@ -87,6 +87,12 @@ Plugin 'aklt/plantuml-syntax'
 Plugin 'mbbill/undotree'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'roxma/nvim-yarp'
+Plugin 'roxma/vim-hug-neovim-rpc'
+Plugin 'ujihisa/neco-look'
+Plugin 'rhysd/committia.vim'
 
 call vundle#end()
 colorscheme sakura
@@ -200,3 +206,32 @@ augroup ocaml_format
 	autocmd!
 	autocmd BufWrite,FileWritePre,FileAppendPre *.mli\= call s:ocaml_format()
 augroup END
+
+augroup GitSpellCheck
+    autocmd!
+    autocmd FileType gitcommit setlocal spell
+augroup END
+
+" Shougo/deoplete.nvim
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option('sources', {
+\ 'gitcommit': ['look'],
+\})
+
+" rhysd/committia.vim
+let g:committia_hooks = {}
+function! g:committia_hooks.edit_open(info)
+    " Additional settings
+    setlocal spell
+    setlocal spelllang+=cjk
+
+    " If no commit message, start with insert mode
+    if a:info.vcs ==# 'git' && getline(1) ==# ''
+        startinsert
+    end
+
+    " Scroll the diff window from insert mode
+    " Map <C-n> and <C-p>
+    imap <buffer><C-n> <Plug>(committia-scroll-diff-down-half)
+    imap <buffer><C-p> <Plug>(committia-scroll-diff-up-half)
+endfunction
