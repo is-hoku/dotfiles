@@ -207,6 +207,7 @@ augroup ocaml_format
 	autocmd BufWrite,FileWritePre,FileAppendPre *.mli\= call s:ocaml_format()
 augroup END
 
+" spell check in commit messages
 augroup GitSpellCheck
     autocmd!
     autocmd FileType gitcommit setlocal spell
@@ -217,6 +218,9 @@ let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option('sources', {
 \ 'gitcommit': ['look'],
 \})
+call deoplete#custom#option({
+\ 'auto_complete': v:false,
+\})
 
 " rhysd/committia.vim
 let g:committia_hooks = {}
@@ -226,9 +230,9 @@ function! g:committia_hooks.edit_open(info)
     setlocal spelllang+=cjk
 
     " If no commit message, start with insert mode
-    if a:info.vcs ==# 'git' && getline(1) ==# ''
-        startinsert
-    end
+    " if a:info.vcs ==# 'git' && getline(1) ==# ''
+    "     startinsert
+    " end
 
     " Scroll the diff window from insert mode
     " Map <C-n> and <C-p>
