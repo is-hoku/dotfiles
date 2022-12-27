@@ -18,11 +18,14 @@ set smartcase
 set wildmenu
 set wildignorecase
 set t_Co=256
-set clipboard=unnamedplus
-" set clipboard=unnamed (Mac)
+if has('mac')
+	set clipboard=unnamed
+	set directory=~/.cache/vim/swap
+else
+	set clipboard=unnamedplus
+endif
 set shiftwidth=4
 set tabstop=4
-" set directory=~/.cache/vim/swap (Mac)
 let g:airline_theme = 'sakura'
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -53,10 +56,7 @@ autocmd QuickFixCmdPost *make* cwindow
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree' |
 		\ Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'franbach/miramare'
-Plugin 'tomasr/molokai'
 Plugin 'vim-airline/vim-airline'
-Plugin 'sainnhe/everforest'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'prabirshrestha/vim-lsp'
@@ -93,6 +93,9 @@ Plugin 'roxma/nvim-yarp'
 Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'ujihisa/neco-look'
 Plugin 'rhysd/committia.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'itchyny/vim-qfedit'
+Plugin 'machakann/vim-sandwich'
 
 call vundle#end()
 colorscheme sakura
@@ -239,3 +242,21 @@ function! g:committia_hooks.edit_open(info)
     imap <buffer><C-n> <Plug>(committia-scroll-diff-down-half)
     imap <buffer><C-p> <Plug>(committia-scroll-diff-up-half)
 endfunction
+
+" nathanaelkane/vim-indent-guides
+" let g:indent_guides_enable_on_vim_startup = 1
+" let g:indent_guides_auto_colors = 0
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+
+
+" airblade/vim-gitgutter
+let g:gitgutter_sign_added = '+'
+let g:gitgutter_sign_modified = '>'
+let g:gitgutter_sign_removed = '-'
+let g:gitgutter_sign_removed_first_line = '^'
+let g:gitgutter_sign_modified_removed = '<'
+let g:gitgutter_map_keys = 0
+let g:gitgutter_set_sign_backgrounds=1
+set signcolumn=yes
+set updatetime=100
