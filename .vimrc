@@ -35,10 +35,11 @@ set termguicolors
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
-nnoremap j gj
-nnoremap k gk
-nnoremap <Down> gj
-nnoremap <Up> gk
+nmap gj gj<SID>g
+nmap gk gk<SID>g
+nnoremap <script> <SID>gj gj<SID>g
+nnoremap <script> <SID>gk gk<SID>g
+nmap <SID>g <Nop>
 nmap <C-k> :LspHover<CR>
 nnoremap <expr><Leader>j lsp#scroll(+4)
 nnoremap <expr><Leader>k lsp#scroll(-4)
