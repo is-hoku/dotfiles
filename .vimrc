@@ -122,6 +122,9 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeGitStatusShowIgnored = 1
 
+" prabirshrestha/vim-lsp
+let g:lsp_diagnostics_virtual_text_enabled = 0
+
 " junegunn/fzf junegunn/fzf.vim
 if executable('rg')
 	command! -bang -nargs=* Rg
