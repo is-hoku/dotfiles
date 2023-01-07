@@ -97,6 +97,7 @@ Plugin 'rhysd/committia.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'itchyny/vim-qfedit'
 Plugin 'machakann/vim-sandwich'
+Plugin 'sbdchd/neoformat'
 
 call vundle#end()
 colorscheme sakura
@@ -197,22 +198,39 @@ autocmd BufWritePost *.tf call terraform#fmt()
 nnoremap <C-p> :UndotreeToggle<CR>
 
 " merlin
-let g:opamshare = substitute(system('opam var share'),'\n$','','''')
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " ocp-indent
-set rtp^="/home/hoku/.opam/4.14.0/share/ocp-indent/vim"
+"set rtp^="/home/hoku/.opam/4.14.0/share/ocp-indent/vim"
+" set rtp^="/home/hoku/.local/share/vim-lsp-settings/servers/ocaml-lsp/ocaml-lsp-files/_opam/share/ocp-indent/vim"
+"
+"function! s:ocaml_format()
+"	let now_line = line('.')
+"	exec ':%! ocamlformat'
+"	exec ':' . now_line
+"endfunction
+"
+"augroup ocaml_format
+"	autocmd!
+"	autocmd BufWrite,BufWritePost,FileWritePre,FileAppendPre *.ml call s:ocaml_format()
+"augroup END
 
-function! s:ocaml_format()
-	let now_line = line('.')
-	exec ':%! ocp-indent'
-	exec ':' . now_line
-endfunction
-
-augroup ocaml_format
-	autocmd!
-	autocmd BufWrite,FileWritePre,FileAppendPre *.mli\= call s:ocaml_format()
+" sbdchd/neoformat
+augroup fmt
+  autocmd!
+  autocmd BufWritePre *.ml undojoin | Neoformat
 augroup END
+
+let g:opambin = substitute(system('opam config var bin'),'\n$','','''')
+let g:neoformat_ocaml_ocamlformat = {
+            \ 'exe': g:opambin . '/ocamlformat',
+            \ 'no_append': 1,
+            \ 'stdin': 1,
+            \ 'args': ['--enable-outside-detected-project', '--name', '"%:p"', '-']
+            \ }
+
+let g:neoformat_enabled_ocaml = ['ocamlformat']
 
 " spell check in commit messages
 augroup GitSpellCheck
