@@ -37,7 +37,9 @@ downgrade
 drawio-desktop
 dunst
 eclipse-jee
+ed
 efibootmgr
+electron20
 fakeroot
 fcitx
 fcitx-configtool
@@ -61,6 +63,7 @@ gcab
 gcc
 gdb
 gettext
+ghc
 gimp
 git
 git-completion
@@ -193,6 +196,7 @@ python-lxml
 python-pipenv
 python-protobuf
 python-pygments
+python-pynvim
 python-snowballstemmer
 python-sphinx
 python-sphinx-alabaster-theme
@@ -218,6 +222,7 @@ skk-jisyo
 skktools
 slack-desktop
 spotify
+stack
 starship
 strace
 sudo
@@ -242,6 +247,7 @@ vala
 vi
 vifm
 visual-studio-code-bin
+vizex
 vkd3d
 vlc
 vulkan-headers
