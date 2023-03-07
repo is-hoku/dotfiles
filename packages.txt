@@ -161,6 +161,7 @@ nodejs-nopt
 noto-fonts-emoji
 npm
 nvm
+obsidian
 olive
 oneko
 oniguruma
@@ -172,7 +173,7 @@ openssl-1.1
 otf-ipafont
 packettracer
 pacman
-pandoc
+pandoc-cli
 paru
 patch
 pavucontrol
@@ -226,6 +227,7 @@ stack
 starship
 strace
 sudo
+swi-prolog
 sxiv
 teams
 terraform-docs
