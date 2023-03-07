@@ -220,6 +220,7 @@ execute "set rtp+=" . g:opamshare . "/merlin/vim"
 augroup fmt
   autocmd!
   autocmd BufWritePre *.ml undojoin | Neoformat
+  autocmd BufWritePre *.mli undojoin | Neoformat
 augroup END
 
 let g:opambin = substitute(system('opam config var bin'),'\n$','','''')
