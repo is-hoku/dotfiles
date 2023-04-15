@@ -15,7 +15,7 @@ map K zoom in
 map J zoom out
 
 # Color
-set recolor true
+# set recolor true
 set recolor-lightcolor      "#3f3740"
 set recolor-darkcolor       "#ffd7ff"
 set highlight-color         "#af87d7"
