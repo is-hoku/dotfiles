@@ -1,5 +1,6 @@
 accountsservice
 acpi
+adobe-reader-11
 adobe-source-han-serif-jp-fonts
 adobe-source-han-serif-otc-fonts
 alacritty
@@ -210,6 +211,7 @@ python-sphinxcontrib-serializinghtml
 qt5ct
 qtspim
 quartus-free
+r
 remmina
 ripgrep
 rofi
