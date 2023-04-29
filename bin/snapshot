@@ -1,0 +1,16 @@
+#!/bin/bash
+# take a snapshot
+
+date=$(date "+%F_%H-%M-%S")
+snapshot_dir="/home/hoku/backup/snapshot"
+
+if [ 10 -le $(ls -1U $snapshot_dir | wc -l) ]; then
+	oldest_snapshot="$(ls -rt $snapshot_dir | tail -n1)"
+	btrfs subvolume delete $snapshot_dir/$oldest_snapshot
+fi
+
+if [ -e $snapshot_dir/$date ]; then
+	echo "snapshot is already exist"
+else
+	btrfs subvolume snapshot -r / $snapshot_dir/$date
+fi

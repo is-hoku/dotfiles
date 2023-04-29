@@ -1,6 +1,5 @@
 accountsservice
 acpi
-adobe-reader-11
 adobe-source-han-serif-jp-fonts
 adobe-source-han-serif-otc-fonts
 alacritty
@@ -48,6 +47,7 @@ fcitx-mozc
 fcitx-qt5
 fcitx-skk
 feh
+figlet
 figma-linux
 file
 findutils
@@ -85,7 +85,6 @@ gucharmap
 gvim
 gzip
 hdf5
-heroku-cli
 howdy
 hugo
 i3-gaps-rounded-git
@@ -183,6 +182,7 @@ perl-parse-yapp
 pfetch
 picom
 pipes.sh
+pixz
 pkgconf
 pkgfile
 poedit

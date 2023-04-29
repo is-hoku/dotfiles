@@ -1,0 +1,23 @@
+#!/bin/bash
+# system backup
+
+echo "taking a snapshot"
+
+snapshot
+
+echo "creating a tar archive file"
+
+backup_dir="/home/hoku/backup"
+snapshot_dir="/home/hoku/backup/snapshot"
+exclude_file="/home/hoku/backup/exclude.txt"
+
+latest_snapshot="$(ls -rt $snapshot_dir | head -n1)"
+
+nice tar cvpf $backup_dir/system_$latest_snapshot.tar.xz \
+	--sparse \
+	--use-compress-prog=pixz \
+	--xattrs \
+	--exclude-from=$exclude_file \
+	-C $snapshot_dir/$latest_snapshot \
+	. \
+	> $backup_dir/system_$latest_snapshot.log
