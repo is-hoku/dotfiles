@@ -14,6 +14,18 @@
 - Image Viewer: sxiv
 - Notification Daemon: dunst
 - Screenshot Tool: flameshot
-- Clock: tty-clock
 - Fetch: neofetch, pfetch
 - Clipboard Manager: greenclip
+- Input Method (Module): fcitx5-skk
+
+## Install
+
+Clone this repository.  
+```
+git clone https://github.com/is-hoku/dotfiles.git ~/dotfiles
+```
+Run the install script.  
+```
+cd ~/dotfiles
+make install
+```
