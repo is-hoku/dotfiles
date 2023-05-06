@@ -1,0 +1,5 @@
+version=3.2.2
+[Parsers]
+MigratedTo20=1
+[TM]
+search_paths=/home/hoku:/usr/share/locale:/usr/local/share/locale

@@ -1,24 +1,10 @@
-
 [greenclip]
   blacklisted_applications = []
   enable_image_support = true
   history_file = "/home/hoku/.cache/greenclip.history"
   image_cache_directory = "/tmp/greenclip"
-  max_history_length = 50
+  max_history_length = 100
   max_selection_size_bytes = 0
-  static_history = ["""
----
-title: ""
-date: "2023/00/00"
-slug: "2023/00/00"
-description: "2023年0月0日の日報"
----
-
-## やったこと
-
-## 思ったこと
-
-## 今日の英会話
-"""]
+  static_history = []
   trim_space_from_selection = true
   use_primary_selection_as_input = false

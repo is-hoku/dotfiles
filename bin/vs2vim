@@ -1,8 +1,0 @@
-#!/bin/bash
-[ ! -f ~/Downloads/$1 ] && echo "File not found!" && exit
-mv ~/Downloads/$1 ./
-iconv -c -f sjis -t utf8 $1 -o $1
-sed -i 's/\¥/\\/g' $1 
-sed -i 's/scanf_s/scanf/g' $1
-sed -i 's/strcpy_s/strcpy/g' $1
-sed -i 's/gets_s(str, 256)/fgets(str, 256, stdin)/g' $1

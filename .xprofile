@@ -4,3 +4,5 @@ export XMODIFIERS=@im=fcitx
 export DefaultIMModule=fcitx
 
 export QT_QPA_PLATFORMTHEME=qt5ct
+
+setxkbmap -option caps:escape &

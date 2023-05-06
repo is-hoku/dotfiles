@@ -200,17 +200,6 @@ ws-icon-7 = 8;θ
 ws-icon-8 = 9;ι
 ws-icon-9 = 10;κ
 
-;ws-icon-0 = 1;Α
-;ws-icon-1 = 2;Β
-;ws-icon-2 = 3;Γ
-;ws-icon-3 = 4;Δ
-;ws-icon-4 = 5;Ε
-;ws-icon-5 = 6;Ζ
-;ws-icon-6 = 7;Η
-;ws-icon-7 = 8;Θ
-;ws-icon-8 = 9;Ι
-;ws-icon-9 = 10;Κ
-
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %icon%
 label-unfocused-padding = 2
@@ -245,7 +234,7 @@ label-song-ellipsis = true
 
 [module/player-mpris-tail]
 type = custom/script
-exec = ~/.config/polybar/polybar-scripts/player-mpris-tail.py -f '{icon} {:artist:t10:{artist}:}{:artist: - :}{:t10:{title}:}  %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py previous -b vlc -b plasma-browser-integration:}  %{A} %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py play-pause -b vlc -b plasma-browser-integration:} {icon-reversed} %{A} %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py next -b vlc -b plasma-browser-integration:}  %{A}' -b vlc -b plasma-browser-integration
+exec = ~/.config/polybar/polybar-scripts/player-mpris-tail.py -f '{:artist:t10:{artist}:}{:artist: - :}{:t10:{title}:}  %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py previous -b vlc -b plasma-browser-integration:}  %{A} %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py play-pause -b vlc -b plasma-browser-integration:} {icon-reversed} %{A} %{A1:~/.config/polybar/polybar-scripts/player-mpris-tail.py next -b vlc -b plasma-browser-integration:}  %{A}' -b vlc -b plasma-browser-integration
 tail = true
 
 [module/xbacklight]

@@ -7,7 +7,6 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color'
-alias mozc-settings='/usr/lib/mozc/mozc_tool --mode=config_dialog'
 PS1='[\u@\h \W]\$ '
 set -o vi
 
@@ -32,7 +31,7 @@ export QSYS_ROOTDIR="/home/hoku/.cache/paru/clone/quartus-free/pkg/quartus-free-
 
 source /usr/share/git/completion/git-completion.bash
 
-export FCITX_CONFIG_DIR="/home/hoku/.config/fcitx"
+export FCITX_CONFIG_DIR="/home/hoku/.config/fcitx5"
 
 # Swagger ui preview
 function swagger_yaml2json() {
@@ -91,21 +90,6 @@ function swagger_preview() {
 	fi
 }
 export -f swagger_preview
-
-function goinstall() {
-	go install $1 && echo go install $1 >> ~/dotfiles/goinstall
-}
-export -f goinstall
-
-function goupdate() {
-	cp /dev/null ~/dotfiles/goupdate
-	while read line
-	do
-		echo ${line} | sed -e "s/@.*/@latest/g" >> goupdate
-		./goupdate >&1
-	done < ~/dotfiles/goinstall
-}
-export -f goupdate
 
 eval $(opam env)
 

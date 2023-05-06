@@ -153,14 +153,14 @@ set imsearch=0
 set imactivatefunc=ImActivate
 function! ImActivate(active)
 	if a:active
-		call system('fcitx-remote -o')
+		call system('fcitx5-remote -o')
 	else
-		call system('fcitx-remote -c')
+		call system('fcitx5-remote -c')
 	endif
 endfunction
 set imstatusfunc=ImStatus
 function! ImStatus()
-	return system('fcitx-remote')[0] is# '2'
+	return system('fcitx5-remote')[0] is# '2'
 endfunction
 
 " dhruvasagar/vim-table-mode
