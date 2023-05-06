@@ -21,5 +21,6 @@
 !/sakura_theme.crx
 !/goinstall
 
+!/Makefile
 !/README.md
 !.gitignore
