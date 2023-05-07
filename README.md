@@ -18,7 +18,7 @@
 - Clipboard Manager: greenclip
 - Input Method (Module): fcitx5-skk
 
-## Install
+## Installation
 
 Clone this repository.  
 ```
