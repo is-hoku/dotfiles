@@ -20,6 +20,7 @@
 !/etc/
 !/sakura_theme.crx
 !/goinstall
+!.dir_colors
 
 !/Makefile
 !/README.md
