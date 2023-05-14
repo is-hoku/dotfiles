@@ -151,7 +151,7 @@ configuration {
   }
 }
 
-@theme "sakura"
+@theme "themes/sakura.rasi"
 
 element {
 	children: [element-icon, element-text];
