@@ -1,5 +1,8 @@
 # dotfiles
 ![my-desktop-screen](https://user-images.githubusercontent.com/52068717/203508722-0ec39a4d-eb06-4d67-9478-c55369a5ccd8.png)
+## Color scheme
+
+- [sakura](https://github.com/sakura-theme)
 
 ## Contents
 - OS: Arch Linux
