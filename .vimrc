@@ -65,7 +65,7 @@ Plugin 'mattn/vim-lsp-settings'
 Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-lsp.vim'
 Plugin 'Raimondi/delimitMate'
-Plugin 'is-hoku/sakura'
+Plugin 'sakura-theme/vim'
 Plugin 'mattn/vim-goimports'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
@@ -76,7 +76,7 @@ Plugin 'vim-skk/eskk.vim'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'kana/vim-operator-user'
 Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+Plugin 'prettier/vim-prettier'
 Plugin 'nvie/vim-flake8'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'hashivim/vim-terraform'
@@ -201,21 +201,6 @@ nnoremap <C-p> :UndotreeToggle<CR>
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
-" ocp-indent
-"set rtp^="/home/hoku/.opam/4.14.0/share/ocp-indent/vim"
-" set rtp^="/home/hoku/.local/share/vim-lsp-settings/servers/ocaml-lsp/ocaml-lsp-files/_opam/share/ocp-indent/vim"
-"
-"function! s:ocaml_format()
-"	let now_line = line('.')
-"	exec ':%! ocamlformat'
-"	exec ':' . now_line
-"endfunction
-"
-"augroup ocaml_format
-"	autocmd!
-"	autocmd BufWrite,BufWritePost,FileWritePre,FileAppendPre *.ml call s:ocaml_format()
-"augroup END
-
 " sbdchd/neoformat
 augroup fmt
   autocmd!
@@ -283,3 +268,8 @@ let g:gitgutter_map_keys = 0
 let g:gitgutter_set_sign_backgrounds=1
 set signcolumn=yes
 set updatetime=100
+
+" mattn/vim-lsp-settings
+let g:lsp_settings = {
+\  'efm-langserver': {'disabled': v:false}
+\}

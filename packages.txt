@@ -24,6 +24,7 @@ clang
 crudini
 dbus-python
 delve
+deno
 dhcpcd
 dialog
 docbook-xml
@@ -43,6 +44,7 @@ fcitx5-configtool
 fcitx5-gtk
 fcitx5-material-color
 fcitx5-skk
+fcron
 feh
 figlet
 figma-linux
@@ -83,8 +85,11 @@ jetbrains-toolbox
 jq
 kdeconnect
 keybase-bin
+lib32-gtk2
 lib32-libxml2
+lib32-ncurses5-compat-libs
 libieee1284
+libtiff5
 libuninameslist
 libvncserver
 libxcrypt-compat
@@ -108,6 +113,7 @@ mingw-w64-crt
 mingw-w64-gcc
 mingw-w64-headers
 mingw-w64-winpthreads
+modelsim-intel-starter
 mpc
 mpd
 ncmpcpp
@@ -133,6 +139,7 @@ opencv
 openssh
 openssl-1.1
 otf-ipafont
+packettracer
 pandoc-cli
 paru
 pavucontrol
@@ -192,6 +199,7 @@ sxiv
 teams
 terraform-docs
 tfenv
+themix-full-git
 thunderbird
 tk
 tmux
