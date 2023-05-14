@@ -21,6 +21,7 @@
 !/sakura_theme.crx
 !/goinstall
 !.dir_colors
+!install_sakura_theme.sh
 
 !/Makefile
 !/README.md

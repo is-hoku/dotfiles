@@ -30,3 +30,6 @@ mkdir -p ~/temporary/root/Pictures/screenshots
 
 # install packages from packages.txt
 paru -Syu - < packages.txt
+
+# install sakura theme
+bash ~/dotfiles/install_sakura_theme.sh
