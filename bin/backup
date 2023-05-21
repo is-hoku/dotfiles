@@ -3,21 +3,30 @@
 
 echo "taking a snapshot"
 
-snapshot
+snapshot $1
 
 echo "creating a tar archive file"
 
-backup_dir="/home/hoku/backup"
-snapshot_dir="/home/hoku/backup/snapshot"
-exclude_file="/home/hoku/backup/exclude.txt"
+if [ $1 = '/' ]; then
+	dir_name="root"
+elif [ $1 = '/home' ]; then
+	dir_name="home"
+else
+	echo "invalid argument: first argument must be / or /home"
+	exit 1
+fi
 
-latest_snapshot="$(ls -rt $snapshot_dir | head -n1)"
+backup_dir="/backup"
+snapshot_dir="/snapshots/${dir_name}"
+exclude_file="/backup/exclude.txt"
 
-nice tar cvpf $backup_dir/system_$latest_snapshot.tar.xz \
+latest_snapshot="$(ls -rt ${snapshot_dir} | head -n1)"
+
+nice tar cvpf ${backup_dir}/${dir_name}_${latest_snapshot}.tar.xz \
 	--sparse \
 	--use-compress-prog=pixz \
 	--xattrs \
-	--exclude-from=$exclude_file \
-	-C $snapshot_dir/$latest_snapshot \
+	--exclude-from=${exclude_file} \
+	-C ${snapshot_dir}/${latest_snapshot} \
 	. \
-	> $backup_dir/system_$latest_snapshot.log
+	> ${backup_dir}/${dir_name}_${latest_snapshot}.log

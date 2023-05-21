@@ -2,15 +2,24 @@
 # take a snapshot
 
 date=$(date "+%F_%H-%M-%S")
-snapshot_dir="/home/hoku/backup/snapshot"
 
-if [ 10 -le $(ls -1U $snapshot_dir | wc -l) ]; then
-	oldest_snapshot="$(ls -rt $snapshot_dir | tail -n1)"
-	btrfs subvolume delete $snapshot_dir/$oldest_snapshot
+if [ $1 = '/' ]; then
+	snapshot_dir="/snapshots/root"
+elif [ $1 = '/home' ]; then
+	snapshot_dir="/snapshots/home"
+else
+	echo "invalid argument: first argument must be / or /home"
+	exit 1
 fi
 
-if [ -e $snapshot_dir/$date ]; then
+if [ 5 -le $(ls -1U ${snapshot_dir} | wc -l) ]; then
+	oldest_snapshot="$(ls -rt ${snapshot_dir} | tail -n1)"
+	btrfs subvolume delete ${snapshot_dir}/${oldest_snapshot}
+fi
+
+if [ -e ${snapshot_dir}/${date} ]; then
 	echo "snapshot is already exist"
+	exit 1
 else
-	btrfs subvolume snapshot -r / $snapshot_dir/$date
+	btrfs subvolume snapshot -r $1 ${snapshot_dir}/${date}
 fi

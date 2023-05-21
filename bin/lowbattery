@@ -14,3 +14,11 @@ fi
 #
 #*/5 * * * * /bin/sh /home/hoku/bin/lowbattery
 
+# $ fcrontab -e
+# PATH=/usr/bin:/bin
+# DISPLAY=:0.0
+# XDG_RUNTIME_DIR=/run/user/$(id -u)
+# DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+# MAILTO=""
+# 
+# @ 5 /bin/sh /home/hoku/bin/lowbattery
