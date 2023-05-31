@@ -209,6 +209,7 @@ augroup fmt
 augroup END
 
 let g:opambin = substitute(system('opam config var bin'),'\n$','','''')
+let g:neoformat_only_msg_on_error = 1
 let g:neoformat_ocaml_ocamlformat = {
             \ 'exe': g:opambin . '/ocamlformat',
             \ 'no_append': 1,

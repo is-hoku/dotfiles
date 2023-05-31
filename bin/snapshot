@@ -12,7 +12,7 @@ else
 	exit 1
 fi
 
-if [ 5 -le $(ls -1U ${snapshot_dir} | wc -l) ]; then
+if [ 10 -le $(ls -1U ${snapshot_dir} | wc -l) ]; then
 	oldest_snapshot="$(ls -rt ${snapshot_dir} | tail -n1)"
 	btrfs subvolume delete ${snapshot_dir}/${oldest_snapshot}
 fi
