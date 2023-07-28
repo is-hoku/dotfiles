@@ -37,6 +37,7 @@ drawio-desktop
 dunst
 ed
 efibootmgr
+electron
 electron20
 emacs
 fcitx5
@@ -69,6 +70,7 @@ google-java-format
 gotop
 gparted
 grub
+grub-customizer
 grub2-theme-preview
 gtk-doc
 gucharmap
@@ -113,6 +115,7 @@ mingw-w64-crt
 mingw-w64-gcc
 mingw-w64-headers
 mingw-w64-winpthreads
+mkinitcpio-firmware
 modelsim-intel-starter
 mpc
 mpd
@@ -125,6 +128,7 @@ network-manager-applet
 networkmanager
 ngrok
 ninja
+nkf
 node-gyp
 nodejs
 nodejs-nopt
@@ -189,6 +193,7 @@ skk-emoji-jisyo
 skk-emoji-jisyo-ja
 skk-jisyo
 skktools
+sl
 slack-desktop
 spotify
 stack
@@ -217,7 +222,6 @@ visual-studio-code-bin
 vizex
 vkd3d
 vlc
-vulkan-headers
 w3m
 web-greeter
 wine
