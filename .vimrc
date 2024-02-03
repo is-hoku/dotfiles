@@ -125,6 +125,13 @@ let g:NERDTreeGitStatusShowIgnored = 1
 
 " prabirshrestha/vim-lsp
 let g:lsp_diagnostics_virtual_text_enabled = 0
+au User lsp_setup call lsp#register_server({
+    \ 'name': 'yacc-lsp',
+    \ 'cmd': {server_info->['/home/hoku/projects/yacc-language-server/_build/default/bin/main.exe', '--stdio', 'OCAMLRUNPARAM=b']},
+    \ 'allowlist': ['yacc'],
+    \ })
+let g:lsp_log_verbose = 1
+let g:lsp_log_file = expand('~/temporary/yacc-lsp-in-vim.log')
 
 " junegunn/fzf junegunn/fzf.vim
 if executable('rg')

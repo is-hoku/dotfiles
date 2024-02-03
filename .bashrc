@@ -92,5 +92,6 @@ function swagger_preview() {
 export -f swagger_preview
 
 eval $(opam env)
+export YACC_LANGUAGE_SERVER=/home/hoku/projects/yacc-language-server/
 
 export WINEPREFIX=~/.wine
