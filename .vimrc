@@ -154,6 +154,17 @@ let g:eskk#large_dictionary = {'path': "~/.config/eskk/SKK-JISYO.L", 'sorted': 1
 let g:eskk#kakutei_when_unique_candidate = 1
 let g:eskk#keep_state = 0
 let g:eskk#egg_like_newline = 1
+autocmd User eskk-initialize-pre call s:eskk_initial_pre()
+function! s:eskk_initial_pre()
+let t = eskk#table#new('rom_to_hira*', 'rom_to_hira')
+call t.add_map('.', '．')
+call t.add_map(',', '，')
+call eskk#register_mode_table('hira', t)
+let t = eskk#table#new('rom_to_kata*', 'rom_to_kata')
+call t.add_map('.', '，')
+call t.add_map(',', '．')
+call eskk#register_mode_table('kata', t)
+endfunction
 
 set iminsert=0
 set imsearch=0
