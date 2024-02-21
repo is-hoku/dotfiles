@@ -22,6 +22,9 @@
 !/goinstall
 !.dir_colors
 !install_sakura_theme.sh
+!/.screenlayout
+!/.screenlayout/**
+!/via/
 
 !/Makefile
 !/README.md
