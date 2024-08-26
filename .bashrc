@@ -27,7 +27,7 @@ export PATH=$PATH:~/bin
 export GOPATH=~/go
 export PATH="$GOPATH/bin:$PATH"
 
-export QSYS_ROOTDIR="/home/hoku/.cache/paru/clone/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
+export QSYS_ROOTDIR="/home/hoku/.cache/paru/clone/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/23.1/quartus/sopc_builder/bin"
 
 source /usr/share/git/completion/git-completion.bash
 
