@@ -23,7 +23,7 @@ if [ -d "$HOME/.bookmarks" ]; then
 	} && complete -F _goto goto
 fi
 
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:/opt/google-cloud-cli/bin
 export GOPATH=~/go
 export PATH="$GOPATH/bin:$PATH"
 

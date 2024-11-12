@@ -1,0 +1,16 @@
+{
+  "ddc-ui-pum": { "branch": "main", "commit": "7e568274b3c22ca8d1742ddec43ea3a63d6ab7e9" },
+  "ddc.vim": { "branch": "main", "commit": "dcf217d62dc29c7f28f2186c094e5906fc556fc1" },
+  "denops.vim": { "branch": "main", "commit": "0c722617d72c56751e748070c12ec9d827e8fba3" },
+  "lazy.nvim": { "branch": "main", "commit": "7967abe55752aa90532e6bb4bd4663fe27a264cb" },
+  "lualine.nvim": { "branch": "master", "commit": "2a5bae925481f999263d6f5ed8361baef8df4f83" },
+  "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
+  "mason-lspconfig.nvim": { "branch": "main", "commit": "4d0e5b49363cac187326998b96aa6a2884e0e89b" },
+  "mason.nvim": { "branch": "main", "commit": "e2f7f9044ec30067bc11800a9e266664b88cda22" },
+  "nvim-tree.lua": { "branch": "master", "commit": "28eac2801b201f301449e976d7a9e8cfde053ba3" },
+  "nvim-treesitter": { "branch": "master", "commit": "7646c1c12a3121562aa87fd79aace48c728ac096" },
+  "nvim-web-devicons": { "branch": "master", "commit": "19d257cf889f79f4022163c3fbb5e08639077bd8" },
+  "pum.vim": { "branch": "main", "commit": "d2bc1abbcaf29a3a90b212f9b93c5dd898a2b143" },
+  "skkeleton": { "branch": "main", "commit": "2cdd414c1bfa8c363505b8dfc9f50ef2f446ea61" },
+  "vim": { "branch": "main", "commit": "8e49c6aae6a898e5dffcc0e08a94e3dad7c7669a" }
+}
