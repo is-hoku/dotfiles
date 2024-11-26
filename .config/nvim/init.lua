@@ -41,10 +41,6 @@ vim.keymap.set('i', '<CR>', function()
 	end,
 	{ expr = true })
 vim.keymap.set('n', '<Esc><Esc>', ':nohl<CR>')
-vim.keymap.set('n', '<C-k>', ':LspHover<CR>')
-vim.keymap.set('n', '<C-l>', ':LspDefinition<CR>')
-vim.keymap.set('n', '<C-j>', ':LspReferences<CR>')
-vim.keymap.set('n', '<C-p>', ':UndotreeToggle<CR>')
 vim.keymap.set('i', '<C-n>', '<Cmd>call pum#map#insert_relative(+1)<CR>', { silent = true })
 vim.keymap.set('i', '<C-p>', '<Cmd>call pum#map#insert_relative(-1)<CR>', { silent = true })
 

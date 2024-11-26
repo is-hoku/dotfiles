@@ -1,3 +1,3 @@
 return {
-	"sakura-theme/vim"
+	"sakura-theme/vim",
 }

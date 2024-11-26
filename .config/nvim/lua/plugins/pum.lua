@@ -1,3 +1,3 @@
 return {
-	"Shougo/pum.vim"
+	"Shougo/pum.vim",
 }
