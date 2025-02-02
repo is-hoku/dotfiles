@@ -95,3 +95,4 @@ eval $(opam env)
 export YACC_LANGUAGE_SERVER=/home/hoku/projects/yacc-language-server/
 
 export WINEPREFIX=~/.wine
+export OPENAI_API_KEY=$(secret-tool lookup api openai)
