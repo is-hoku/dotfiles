@@ -44,11 +44,21 @@ return {
 				width = 10,
 
 				-- Value of 'winblend' option
-				winblend = 25,
+				winblend = 10,
 
 				-- Z-index
 				zindex = 10,
 			},
 		})
+		local is_minimap_open = true
+		local function toggleMinimap()
+			if is_minimap_open then
+				map.close()
+			else
+				map.open()
+			end
+			is_minimap_open = not is_minimap_open
+		end
+		vim.keymap.set('n', 'm', toggleMinimap, { noremap = true, silent = true })
 	end
 }

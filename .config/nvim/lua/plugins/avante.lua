@@ -9,7 +9,7 @@ return {
 		auto_suggestions_provider = "openai",
 		openai = {
 			endpoint = "https://api.openai.com/v1", -- The full endpoint of the provider
-			model = "gpt-4o-mini",         -- The model name to use with this provider
+			model = "o3-mini",             -- The model name to use with this provider
 			api_key_name = "OPENAI_API_KEY", -- The name of the environment variable that contains the API key
 		},
 	},
