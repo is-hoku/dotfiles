@@ -2,7 +2,9 @@ accountsservice
 acpi
 adobe-source-han-serif-jp-fonts
 adobe-source-han-serif-otc-fonts
+aider-chat-venv
 alacritty
+alsa-utils
 appstream-glib
 arandr
 arp-scan
@@ -22,6 +24,7 @@ bonsai.sh-git
 cava
 clang
 composer
+cpio
 crudini
 debtap
 delve
@@ -30,6 +33,7 @@ devtools
 dhcpcd
 dialog
 discord
+dmidecode
 docbook-xml
 docbook-xsl
 docker
@@ -42,7 +46,6 @@ dunst
 ed
 efibootmgr
 electron
-electron20
 emacs
 fcitx5
 fcitx5-configtool
@@ -50,6 +53,7 @@ fcitx5-gtk
 fcitx5-material-color
 fcitx5-skk
 fcron
+fd
 feh
 figlet
 figma-linux
@@ -70,6 +74,7 @@ glib2-docs
 gnome-disk-utility
 gnome-keyring
 google-chrome
+google-cloud-cli
 google-java-format
 gotop
 gparted
@@ -112,6 +117,7 @@ lightdm-webkit-theme-litarvan
 lightdm-webkit2-greeter
 linux
 linux-firmware
+linux-headers
 llvm
 lsd
 lsof
@@ -119,6 +125,7 @@ lvm2
 lxappearance
 man-db
 man-pages
+mariadb
 maven
 mingw-w64-binutils
 mingw-w64-crt
@@ -132,6 +139,7 @@ mpd
 ncdu
 ncmpcpp
 neofetch
+neovim
 net-snmp
 net-tools
 netctl
@@ -143,6 +151,7 @@ ninja
 nkf
 noto-fonts-cjk
 noto-fonts-emoji
+npm
 ntpclient
 nvm
 oneko
@@ -160,6 +169,9 @@ pandoc-cli
 paru
 pavucontrol
 pcmanfm
+pdftk
+perl-authen-sasl
+perl-io-socket-ssl
 perl-parse-yapp
 pfetch
 php
@@ -167,6 +179,7 @@ picom
 pipes.sh
 pixz
 pkgfile
+plantuml
 poedit
 polybar
 postman-bin
@@ -278,6 +291,7 @@ woeusb
 words
 wpa_supplicant
 wps-office
+xclip
 xf86-video-fbdev
 xf86-video-vesa
 xinetd
